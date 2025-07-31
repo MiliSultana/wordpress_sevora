@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+      
+.font-instrument-serif{
+font-family: "Instrument Serif", serif;
+}
+      
+.font-instrument-sans{
+font-family: "Instrument Sans", sans-serif;
+}
