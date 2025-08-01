@@ -8,8 +8,11 @@
     <link href="./output.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"></head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap"
+        rel="stylesheet">
+</head>
 
 
 </head>
@@ -17,10 +20,10 @@
 <body class="bg-black text-white ">
 
     <!-- HEADER / NAVIGATION -->
-    <div class="max-w-[1440px] mx-auto px-4 md:px-[100px] bg-[#121212] mt-20 mb-[100px] md:mt-0">
-        <header class="bg-[##121212]">
+    <div class="container mx-auto px-[100px] bg-[#121212] mt-20  md:mt-0">
+        <header class="bg-[#121212]">
 
-            <nav class="flex items-center justify-between h-[100px] flex-wrap">
+            <nav class=" container flex items-center justify-between h-[100px] flex-wrap">
 
                 <!-- Logo -->
                 <div>
@@ -51,34 +54,39 @@
 
                 <!-- Back to Home Button -->
                 <div class="mt-4 md:mt-0 w-[181px] h-[44px]">
-                    <a href="#"
-                        class="inline-block font-instrument-sans font-medium text-center py-[13px] bg-[#242424] text-white px-[26px]  border border-[#2E2E2E]  hover:bg-[#555] text-[13px]  transition">
-                        <span class="font-bold">←</span> &nbsp; BACK TO HOME
+                    <a href="#" class="inline-flex items-center font-instrument-sans font-medium text-center  py-[13px] px-[26px]
+            bg-[#242424] text-white border border-[#2E2E2E] hover:bg-[#555] text-[13px] transition gap-2">
+                        <img src="images/ArrowLeft.png" alt="Back Arrow" class="w-4 h-4" />
+                        <span class="">BACK TO HOME</span>
                     </a>
                 </div>
             </nav>
 
         </header>
+<div class="absolute items-center justify-center w-[1440px] h-[1px] bg-gray-400 mx-auto mb-[-20px]"></div>
+
         <div class="flex flex-wrap items-center h-auto md:h-[40vh]  md:py-0">
 
 
             <!-- LEFT TEXT -->
             <div class="w-full md:w-1/2 mb-10 mt-0 sm:mt-[20px] md:mb-0  text-center md:text-left">
-                <h1 class="text-[40px] md:text-[40px] md:leading-[40px] lg:text-[80px] font-instrument-serif font-normal lg:leading-[88px] ">
+                <h1
+                    class="text-[40px] md:text-[40px] md:leading-[40px] lg:text-[80px] font-instrument-serif font-normal lg:leading-[88px] ">
                     <span class="text-[#737378]">Leading</span> with Vision.<br />
                     Driven by Integrity.
                 </h1>
 
             </div>
 
-            <!-- RIGHT VIDEO -->
+            <!-- RIGHT text -->
             <div class="w-full md:w-1/2 relative flex justify-end items-center overflow-hidden  md:h-full">
 
 
                 <!-- p -->
                 <div class="relative z-10">
                     <p class="ml-[165px] text-[18px] font-instrument-sans">
-                    Our leadership team propels the business forward with vision, integrity, and strategic focus—delivering innovation, market success, and long-term value across every initiative.  </p>
+                        Our leadership team propels the business forward with vision, integrity, and strategic
+                        focus—delivering innovation, market success, and long-term value across every initiative. </p>
                 </div>
             </div>
 
@@ -87,175 +95,180 @@
 
 
 
-            <div class="relative max-w-[82rem] mx-auto mt-[70px]  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[80px]">
-  
-  <!-- Background Image -->
-  <div class="absolute w-[845px] h-[640px] top-[150px] left-[150px]  z-0">
-    <img src="images/Vector.png" alt="Background" class="w-full h-full object-cover" />
-  </div>
+        <div
+            class="relative max-w-[1440px] mb-[100px] mx-auto mt-[70px]  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[80px]">
 
-  <!-- Blur Effect Behind the Background Image -->
-  <div class="absolute w-[520px] h-[520px] top-[200px] left-[360px] bg-[#666666]/80 rounded-full blur-[200px] z-0"></div>
+            <!-- Background Image -->
+            <div class="absolute w-[845px] h-[640px] top-[150px] left-[150px]  z-0">
+                <img src="images/Vector.png" alt="Background" class="w-full h-full object-cover" />
+            </div>
 
-       
+            <!-- Blur Effect Behind the Background Image -->
+            <div
+                class="absolute w-[520px] h-[520px] top-[200px] left-[360px] bg-[#666666]/80 rounded-full blur-[200px] z-0">
+            </div>
 
-  
 
-                 
-                <!-- Team Card -->
-                <div class="bg-[#F5F3ED] text-white relative">
-                    <img src="images/sir.png" alt="Team Member" class="w-full h-auto z-" />
-                    <div class="flex justify-between items-center p-4 font-medium">
-                        <div class="font-instrument-sans font-medium w-[268px] h-">
-                            <h3 class="text-[18px]    text-[#121212]">Mashum Mollah</h3>
-                            <p class="text-[11px]  text-[#737378]">CEO &amp; FOUNDER</p>
-                        </div>
-                        <button class="text-[#121212] text-xl top-0 right-0">+</button>
+
+
+
+
+            <!-- Team Card -->
+            <div class="bg-[#F5F3ED] text-white relative">
+                <img src="images/sir.png" alt="Team Member" class="w-full h-auto z-10" />
+                <div class="flex justify-between items-center p-4 font-medium">
+                    <div class="font-instrument-sans font-medium w-[268px] ">
+                        <h3 class="text-[18px]    text-[#121212]">Mashum Mollah</h3>
+                        <p class="text-[11px]  text-[#737378]">CEO &amp; FOUNDER</p>
                     </div>
+                    <button class="text-[#121212] text-xl top-0 right-0">+</button>
                 </div>
+            </div>
 
-                <!-- Repeat -->
-                <div class="bg-[#F5F3ED] text-white relative">
-                    <img src="images/sir.png" alt="Team Member" class="w-full h-auto z-2" />
-                    <div class="flex justify-between items-center p-4 font-medium">
-                        <div>
-                            <h3 class="text-[18px]  font-instrument-sans font-medium text-[#121212]">Mashum Mollah</h3>
-                            <p class="text-xs text-gray-400">CEO &amp; FOUNDER</p>
-                        </div>
-                        <button class="text-white text-xl">+</button>
+            <!-- Repeat -->
+            <div class="bg-[#F5F3ED] text-white relative">
+                <img src="images/sir.png" alt="Team Member" class="w-full h-auto z-10" />
+                <div class="flex justify-between items-center p-4 font-medium">
+                    <div class="font-instrument-sans font-medium w-[268px] ">
+                        <h3 class="text-[18px]    text-[#121212]">Mashum Mollah</h3>
+                        <p class="text-[11px]  text-[#737378]">CEO &amp; FOUNDER</p>
                     </div>
+                    <button class="text-[#121212] text-xl top-0 right-0">+</button>
                 </div>
+            </div>
 
-                <div class="bg-[#F5F3ED] text-white relative">
-                    <img src="images/sir.png" alt="Team Member" class="w-full h-auto z-10" />
-                    <div class="flex justify-between items-center p-4">
-                        <div>
-                            <h3 class="text-[18px]  font-instrument-sans font-medium text-[#121212]">Mashum Mollah</h3>
-                            <p class="text-xs text-gray-400">CEO &amp; FOUNDER</p>
-                        </div>
-                        <button class="text-white text-xl">+</button>
+            <div class="bg-[#F5F3ED] text-white relative">
+                <img src="images/sir.png" alt="Team Member" class="w-full h-auto z-10" />
+                <div class="flex justify-between items-center p-4 font-medium">
+                    <div class="font-instrument-sans font-medium w-[268px] ">
+                        <h3 class="text-[18px]    text-[#121212]">Mashum Mollah</h3>
+                        <p class="text-[11px]  text-[#737378]">CEO &amp; FOUNDER</p>
                     </div>
+                    <button class="text-[#121212] text-xl top-0 right-0">+</button>
                 </div>
+            </div>
 
-                <!-- Expanded Bio Card -->
+            <!-- Expanded Bio Card -->
 
 
-                <!-- More Team Cards -->
-                <div class="bg-[#F5F3ED] text-white relative">
-                    <img src="images/sir.png" alt="Team Member" class="w-full h-auto" />
-                    <div class="flex justify-between items-center p-4">
-                        <div>
-                            <h3 class="text-[18px]  font-instrument-sans font-medium text-[#121212]">Mashum Mollah</h3>
-                            <p class="text-xs text-gray-400">CEO &amp; FOUNDER</p>
-                        </div>
-                        <button class="text-white text-xl">+</button>
+            <!-- More Team Cards -->
+            <div class="bg-[#F5F3ED] text-white relative">
+                <img src="images/sir.png" alt="Team Member" class="w-full h-auto" />
+                <div class="flex justify-between items-center p-4 font-medium">
+                    <div class="font-instrument-sans font-medium w-[268px] ">
+                        <h3 class="text-[18px]    text-[#121212]">Mashum Mollah</h3>
+                        <p class="text-[11px]  text-[#737378]">CEO &amp; FOUNDER</p>
                     </div>
+                    <button class="text-[#121212] text-xl top-0 right-0">+</button>
                 </div>
+            </div>
 
-                <div class="bg-[#F5F3ED] text-black p-[16px] relative">
-                    <div class="w-[328px] h-[41px] mb-[16px]">
+            <div class="bg-[#F5F3ED] text-black p-[16px] relative">
+                <div class="w-[328px] h-[41px] mb-[16px]">
                     <button class="absolute top-2 right-2 text-xl font-bold ">×</button>
                     <h3 class="text-sm font-bold mb-1">Mashum Mollah</h3>
                     <p class="text-xs text-gray-600 ">CEO &amp; FOUNDER</p>
                 </div>
-                    <p class="text-[14px] font-instrument-sans leading-relaxed text-gray-800">
-                        Starting his career as an SEO specialist, Mashum quickly realized his potential and passion for
-                        creating something
-                        of his own. In 2018, he founded Viacon, a company that has rapidly grown under his leadership to
-                        achieve a
-                        remarkable milestone of becoming a one-million-dollar enterprise by 2022.
-                        Mashum’s entrepreneurial acumen led to the creation and success of three distinguished brands:
-                        RHN, Blog Management,
-                        and Blogger Outreach. These brands have flourished under his strategic direction, establishing
-                        themselves as significant
-                        players in their respective domains. As the founder and visionary behind Viacon, Mashum’s
-                        mission is to expand the
-                        business on a global scale, ensuring long-term and sustainable growth while steering the
-                        company’s voice and vision.
-                    </p>
-                </div>
-                <div class="bg-[#F5F3ED] text-white relative">
-                    <img src="images/sir.png" alt="Team Member" class="w-full h-auto" />
-                    <div class="flex justify-between items-center p-4">
-                        <div>
-                            <h3 class="text-[18px]  font-instrument-sans font-medium text-[#121212]">Mashum Mollah</h3>
-                            <p class="text-xs text-gray-400">CEO &amp; FOUNDER</p>
-                        </div>
-                        <button class="text-white text-xl">+</button>
-                    </div>
-                </div>
-
+                <p class="text-[14px] font-instrument-sans leading-relaxed text-gray-800">
+                    Starting his career as an SEO specialist, Mashum quickly realized his potential and passion for
+                    creating something
+                    of his own. In 2018, he founded Viacon, a company that has rapidly grown under his leadership to
+                    achieve a
+                    remarkable milestone of becoming a one-million-dollar enterprise by 2022.
+                    Mashum’s entrepreneurial acumen led to the creation and success of three distinguished brands:
+                    RHN, Blog Management,
+                    and Blogger Outreach. These brands have flourished under his strategic direction, establishing
+                    themselves as significant
+                    players in their respective domains. As the founder and visionary behind Viacon, Mashum’s
+                    mission is to expand the
+                    business on a global scale, ensuring long-term and sustainable growth while steering the
+                    company’s voice and vision.
+                </p>
             </div>
+            <div class="bg-[#F5F3ED] text-white relative">
+                <img src="images/sir.png" alt="Team Member" class="w-full h-auto" />
+                <div class="flex justify-between items-center p-4 font-medium">
+                    <div class="font-instrument-sans font-medium w-[268px] ">
+                        <h3 class="text-[18px]    text-[#121212]">Mashum Mollah</h3>
+                        <p class="text-[11px]  text-[#737378]">CEO &amp; FOUNDER</p>
+                    </div>
+                    <button class="text-[#121212] text-xl top-0 right-0">+</button>
+                </div>
+            </div>
+
         </div>
+    </div>
 
     </div>
     <footer class=" bg-black text-[#121212]   ">
-  <div class="max-w-[1440px] md:px-[100px] bg-[#F5F3ED] mx-auto py-[100px] flex flex-wrap gap-16 xl:gap-[130px]">
-    
-    <!-- Logo & Description -->
-    <div class="max-w-[300px]  mb-10">
-      <img src="images/Frame 3.png" alt="SEVORA Logo" class="w-[250px] h-[56px] mb-5" />
-      <p class="text-[16px] font-instrument-sans leading-[1.6] mb-5">
-        Maecenas dignissim justo eget nulla rutrum molestie. Dui, vel Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper.
-      </p>
-      <div class="flex">
-        <img src="images/googleplay.png" alt="Google Play" class="w-[120px] mr-2" />
-        <img src="images/applestore.png" alt="App Store" class="w-[120px]" />
-      </div>
-    </div>
+        <div class="container md:px-[100px] bg-[#F5F3ED] mx-auto py-[100px] flex flex-wrap gap-16 xl:gap-[130px]">
 
-    <!-- Footer Links -->
-    <div class="flex flex-wrap gap-10 xl:gap-[120px]">
-      <!-- Seller -->
-      <div>
-        <h4 class="text-[16px] font-instrument-sans font-[500] mb-2">For Seller</h4>
-        <ul class="text-[14px] font-instrument-sans space-y-2">
-          <li class="cursor-pointer">Partner With Us</li>
-          <li class="cursor-pointer">Website For You</li>
-        </ul>
-      </div>
+            <!-- Logo & Description -->
+            <div class="max-w-[300px]  mb-10">
+                <img src="images/Frame 3.png" alt="SEVORA Logo" class="w-[250px] h-[56px] mb-5" />
+                <p class="text-[16px] font-instrument-sans leading-[1.6] mb-5">
+                    Maecenas dignissim justo eget nulla rutrum molestie. Dui, vel Maecenas lobortis sem dui, vel rutrum
+                    risus tincidunt ullamcorper.
+                </p>
+                <div class="flex">
+                    <img src="images/googleplay.png" alt="Google Play" class="w-[120px] mr-2" />
+                    <img src="images/applestore.png" alt="App Store" class="w-[120px]" />
+                </div>
+            </div>
 
-      <!-- Delivery -->
-      <div>
-        <h4 class="text-[16px] font-instrument-sans font-[500] mb-2">For Delivery</h4>
-        <ul class="text-[14px] font-instrument-sans space-y-2">
-          <li class="cursor-pointer">Partner With Us</li>
-          <li class="cursor-pointer">App For You</li>
-        </ul>
-      </div>
+            <!-- Footer Links -->
+            <div class="flex flex-wrap gap-10 xl:gap-[120px]">
+                <!-- Seller -->
+                <div>
+                    <h4 class="text-[16px] font-instrument-sans font-[500] mb-2">For Seller</h4>
+                    <ul class="text-[14px] font-instrument-sans space-y-2">
+                        <li class="cursor-pointer">Partner With Us</li>
+                        <li class="cursor-pointer">Website For You</li>
+                    </ul>
+                </div>
 
-      <!-- Quick Links -->
-      <div>
-        <h4 class="text-[16px] font-instrument-sans font-[500] mb-2">Quick Links</h4>
-        <ul class="text-[14px] font-instrument-sans space-y-2">
-          <li class="cursor-pointer">Privacy Policy</li>
-          <li class="cursor-pointer">Terms & Condition</li>
-          <li class="cursor-pointer">Cookie Policy</li>
-          <li class="cursor-pointer">Help & Support</li>
-        </ul>
-      </div>
+                <!-- Delivery -->
+                <div>
+                    <h4 class="text-[16px] font-instrument-sans font-[500] mb-2">For Delivery</h4>
+                    <ul class="text-[14px] font-instrument-sans space-y-2">
+                        <li class="cursor-pointer">Partner With Us</li>
+                        <li class="cursor-pointer">App For You</li>
+                    </ul>
+                </div>
 
-      <!-- Social Media -->
-      <div>
-        <h4 class="text-[16px] font-instrument-sans font-[500] mb-2">Social Media</h4>
-        <ul class="text-[14px] font-instrument-sans  space-y-2">
-          <li class="cursor-pointer">Facebook</li>
-          <li class="cursor-pointer">Instagram</li>
-          <li class="cursor-pointer">LinkedIn</li>
-          <li class="cursor-pointer">Twitter</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-[16px] font-instrument-sans font-[500] mb-2">Quick Links</h4>
+                    <ul class="text-[14px] font-instrument-sans space-y-2">
+                        <li class="cursor-pointer">Privacy Policy</li>
+                        <li class="cursor-pointer">Terms & Condition</li>
+                        <li class="cursor-pointer">Cookie Policy</li>
+                        <li class="cursor-pointer">Help & Support</li>
+                    </ul>
+                </div>
 
-  <!-- Footer Bottom -->
-   <div class="max-w-[1440px] mx-auto">
-  <div class="pt-10 bg-[#F5F3ED] py-10 text-center text-xs text-[#444] text-[12px] font-instrument-sans tracking-[2px]">
-    © 2025 SEVORA. ALL RIGHTS RESERVED.
-  </div>
-</div>
+                <!-- Social Media -->
+                <div>
+                    <h4 class="text-[16px] font-instrument-sans font-[500] mb-2">Social Media</h4>
+                    <ul class="text-[14px] font-instrument-sans  space-y-2">
+                        <li class="cursor-pointer">Facebook</li>
+                        <li class="cursor-pointer">Instagram</li>
+                        <li class="cursor-pointer">LinkedIn</li>
+                        <li class="cursor-pointer">Twitter</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-</footer>
+        <!-- Footer Bottom -->
+        <div class="container mx-auto">
+            <div
+                class="pt-10 bg-[#F5F3ED] py-10 text-center text-xs text-[#444] text-[12px] font-instrument-sans tracking-[2px]">
+                © 2025 SEVORA. ALL RIGHTS RESERVED.
+            </div>
+        </div>
+
+    </footer>
 </body>
 
 </html>
