@@ -35,7 +35,7 @@
       </div>
 
       <!-- Navigation Links -->
-      <ul class="flex flex-wrap items-center gap-6 text-[13px] ml-[-150px] font-instrument-sans mt-4 md:mt-0">
+      <ul class="flex flex-wrap items-center gap-6 text-[13px] ml-[-280px] font-instrument-sans mt-4 md:mt-0">
         <li><a href="./index.html"
             class="relative text-white font-medium after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:h-[2px] after:w-0 after:bg-white hover:after:w-full after:transition-all after:duration-300">ABOUT
             US</a></li>
@@ -45,10 +45,8 @@
         <li><a href="./index3.html"
             class="relative text-white font-medium after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:h-[2px] after:w-0 after:bg-white hover:after:w-full after:transition-all after:duration-300">CAREERS</a>
         </li>
-        <li><a href="#"
-            class="relative text-white font-medium after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:h-[2px] after:w-0 after:bg-white hover:after:w-full after:transition-all after:duration-300">JOBS</a>
-        </li>
-        <li><a href="#"
+       
+        <li><a href="./index4.html"
             class="relative text-white font-medium after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:h-[2px] after:w-0 after:bg-white hover:after:w-full after:transition-all after:duration-300">BLOG</a>
         </li>
         <li><a href="#"
@@ -67,6 +65,8 @@
     </nav>
 
   </header>
+  <div class="relative w-full  h-[1px] bg-[#242424] mx-auto"></div>
+
   <section class="w-full  bg-[#121212]">
     <div class="container bg-[#121212] mx-auto mt-20 pb-[85px] md:mt-0">
 
@@ -404,32 +404,67 @@
     <div class="container mx-auto px-[48px]">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:pb-[5px] auto-rows-auto  ">
         <!-- Image 1 -->
-        <div class="overflow-hidden">
+        <div class="relative group overflow-hidden w-auto h-[284px] p-4 sm:p-0 md:p-0">
           <img src="images/gellaryPic1.png" alt="Image 1"
-            class="w-[480px] h-[284px] object-cover transition-transform duration-300  hover:scale-110" />
+            class="object-cover w-full h-full  transition-transform duration-300 group-hover:scale-110" />
 
+          <div class="absolute inset-0 w-[136px] h-[39px] items-center ml-[40px] top-3/4">
+            <div>
+              <h2 class="text-[#DDDDDD] text-[18px] font-medium  font-instrument-sans tracking-[0.25px]">
+                Akash Sharma
+              </h2>
+            </div>
+
+            <div>
+              <p class="text-[#DBDBDB] text-[11px] font-medium  font-instrument-sans  tracking-[1.5px] ">DESIGNER</p>
+            </div>
+
+          </div>
+
+          <div class="absolute inset-0  left-[85%] top-3/4">
+            <div>
+              <img src="images/playbutton.png" alt="">
+            </div>
+          </div>
+
+          <div class="absolute inset-0 right-4 top-[43%]  flex flex-col ml-[20px]">
+            <!-- Box 1 -->
+            <div class="overflow-hidden mb-2 h-2 w-2 sm:h-[8px] sm:w-[8px] ">
+              <img src="images/RectangleFullWhite.png" alt="Box 1" class="w-full h-full object-cover" />
+            </div>
+            <!-- Box 2 -->
+            <div class="overflow-hidden mb-2 h-2 w-2 sm:h-[8px] sm:w-[8px]">
+              <img src="images/RectangleHalfWhite.png" alt="Box 2" class="w-full h-full object-cover" />
+            </div>
+            <!-- Box 3 -->
+            <div class="overflow-hidden h-2 w-2 sm:h-[8px] sm:w-[8px]">
+              <img src="images/RectangleHalfWhite.png" alt="Box 3" class="w-full h-full object-cover" />
+            </div>
+          </div>
         </div>
 
         <!-- Image 2 -->
-        <div class="overflow-hidden">
+        <div class="overflow-hidden p-4 sm:p-0 md:p-0">
           <img src="images/gellaryPic2.png" alt="Image 2"
             class="w-[480px] h-[284px] object-cover transition-transform duration-300 hover:scale-110" />
+
         </div>
 
         <!-- Image 3: Spans 2 rows -->
-        <div class="overflow-hidden row-span-2">
+        <div class="overflow-hidden row-span-2 p-4 sm:p-0 md:p-0">
           <img src="images/gellaryPic3.png" alt="Image 3"
-            class="w-[480px] h-[568px] object-cover transition-transform duration-300 hover:scale-110" />
+            class="w-[480px] lg:h-[568px] h-[284px] object-cover transition-transform duration-300 hover:scale-110" />
         </div>
 
         <!-- Image 4: Spans 2 rows starting from row 2 -->
-        <div class="overflow-hidden row-span-2" style="grid-row-start: 2;">
+        <div class="overflow-hidden row-span-2 p-4 sm:p-0 md:p-0" style="grid-row-start: 2;">
           <img src="images/gellaryPic4.png" alt="Image 4"
-            class="w-[480px] h-[569px] object-cover transition-transform duration-300 hover:scale-110" />
+            class="w-[480px] lg:h-[569px] h-[284px] object-cover transition-transform duration-300 hover:scale-110" />
         </div>
 
         <!-- Div instead of Image (Position 5) -->
-        <div class="bg-[#F5F3ED] p-[50px] w-full max-w-[480px] h-[284px] flex flex-col justify-between mx-auto text-center ">
+        <div
+          class="bg-[#F5F3ED] sm:p-[10px] md:p-[50px] w-full max-w-[480px] h-[284px] flex flex-col justify-between mx-auto text-center p-4 sm:p-0 md:p-0">
           <p class="font-instrument-sans text-[16px] font-400 font-italic leading-[24px] text-[#121212]"><i>My favorite
               part about working at Sevora is the people. Our team is a very special bunch! Every day I am surrounded by
               some of the brightest, kindest, and most hardworking people I have ever met.</i></p>
@@ -437,14 +472,14 @@
             <div class="w-[32px] h-[32px] border-[1px] border-[#FFFFFF] overflow-hidden ">
               <img src="images/gellaryPic6.jpg" alt="CEO Image" class="object-cover w-full h-full" />
             </div>
-            <div class="text-center sm:text-left font-instrument-sans font-medium sm:mt-0 mt-3">
+            <div class="text-center sm:text-left font-instrument-sans font-medium sm:mt-0 mt-3 ">
               <h3 class=" text-[12px] font-medium text-[#121212] tracking-[0.25px]">Akash Sharma</h3>
               <p class="text-[9px] text-[#737378] mt-[3px] font-medium tracking-[1.5px]">DESIGNER</p>
             </div>
           </div>
 
 
-          <div class="flex justify-center gap-[8px] mt-[52px]">
+          <div class="relative flex justify-center gap-[8px] lg:mt-[52px] ">
             <!-- Box 1 -->
             <div class=" overflow-hidden">
               <img src="images/RectangleFullBlack.png" alt="Box 1" class="w-full h-full object-cover" />
@@ -467,7 +502,7 @@
         </div>
 
         <!-- Image 6 -->
-        <div class="overflow-hidden">
+        <div class="overflow-hidden p-4 sm:p-0 md:p-0">
           <img src="images/gellaryPic5.png" alt="Image 6"
             class="w-[480px] h-[284px] object-cover transition-transform duration-300 hover:scale-110" />
         </div>
@@ -476,29 +511,30 @@
 
         <!-- Div instead of Image (Position 9) -->
         <div class="relative bg-[#F5F3ED] w-full max-w-[480px] h-[284px] flex items-center justify-center mx-auto">
-  
-  <!-- Centered Text -->
-  <div class="text-center font-instrument-sans font-medium px-4">
-    <h1 class="text-[48px] sm:text-[60px] md:text-[72px] text-[#121212]">96%</h1>
-    <p class="text-[12px] sm:text-[13px] md:text-[14px] text-[#424245] font-medium tracking-[1.5px]">SATISFIED EMPLOYEES</p>
-  </div>
 
-  <!-- Right-Aligned Small Boxes -->
-  <div class="absolute right-4 top-[55%] -translate-y-1/2 flex flex-col items-end">
-    <!-- Box 1 -->
-    <div class="overflow-hidden mb-2 h-2 w-2 sm:h-[8px] sm:w-[8px]">
-      <img src="images/RectangleFullBlack.png" alt="Box 1" class="w-full h-full object-cover" />
-    </div>
-    <!-- Box 2 -->
-    <div class="overflow-hidden mb-2 h-2 w-2 sm:h-[8px] sm:w-[8px]">
-      <img src="images/RectangleHalfBlack.png" alt="Box 2" class="w-full h-full object-cover" />
-    </div>
-    <!-- Box 3 -->
-    <div class="overflow-hidden h-2 w-2 sm:h-[8px] sm:w-[8px]">
-      <img src="images/RectangleHalfBlack.png" alt="Box 3" class="w-full h-full object-cover" />
-    </div>
-  </div>
-</div>
+          <!-- Centered Text -->
+          <div class="text-center font-instrument-sans font-medium px-4">
+            <h1 class="text-[48px] sm:text-[60px] md:text-[72px] text-[#121212]">96%</h1>
+            <p class="text-[12px] sm:text-[13px] md:text-[14px] text-[#424245] font-medium tracking-[1.5px]">SATISFIED
+              EMPLOYEES</p>
+          </div>
+
+          <!-- Right-Aligned Small Boxes -->
+          <div class="absolute right-4 top-[55%] -translate-y-1/2 flex flex-col items-end">
+            <!-- Box 1 -->
+            <div class="overflow-hidden mb-2 h-2 w-2 sm:h-[8px] sm:w-[8px]">
+              <img src="images/RectangleFullBlack.png" alt="Box 1" class="w-full h-full object-cover" />
+            </div>
+            <!-- Box 2 -->
+            <div class="overflow-hidden mb-2 h-2 w-2 sm:h-[8px] sm:w-[8px]">
+              <img src="images/RectangleHalfBlack.png" alt="Box 2" class="w-full h-full object-cover" />
+            </div>
+            <!-- Box 3 -->
+            <div class="overflow-hidden h-2 w-2 sm:h-[8px] sm:w-[8px]">
+              <img src="images/RectangleHalfBlack.png" alt="Box 3" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
 
 
       </div>
