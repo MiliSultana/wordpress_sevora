@@ -1,3 +1,33 @@
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.profile-card').forEach(card => {
+        const toggleBtn = card.querySelector('.toggle-btn');
+        const closeBtn = card.querySelector('.close-btn');
+        const nameTitle = card.querySelector('.name-title');
+        const footer = card.querySelector('.footer-section');
+        const contentArea = card.querySelector('.content-area');
+        const description = card.dataset.description;
+        const originalImage = contentArea.innerHTML; // Save original image HTML
+
+        toggleBtn.addEventListener('click', () => {
+            nameTitle.classList.remove('hidden');
+            closeBtn.classList.remove('hidden');
+            footer.style.display = 'none';
+            contentArea.innerHTML = `<p class="text-[14px] font-instrument-sans leading-[18px] tracking-[1px] text-[#424245] p-[16px]">${description}</p>`;
+        });
+
+        closeBtn.addEventListener('click', () => {
+            nameTitle.classList.add('hidden');
+            closeBtn.classList.add('hidden');
+            footer.style.display = 'flex';
+            contentArea.innerHTML = originalImage;
+        });
+    });
+});
+
+// card for the peragraph
+
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 const scroller = document.querySelector(".scroller");
@@ -104,86 +134,3 @@ if (window.innerWidth > 768) {
     scroller.style.overflow = "visible";
   }
 }
-
-
-  const totalPages = 50;
-let currentPage = 4;
-const visiblePages = 5;
-
-const pagination = document.getElementById("pagination");
-const prevBtn = document.getElementById("prevBtn");
-const nextBtn = document.getElementById("nextBtn");
-
-function createPageButton(page, isActive = false) {
-  const btn = document.createElement("li");
-  btn.textContent = page;
-  btn.className = `min-w-[40px] h-[40px] flex items-center justify-center 
-    rounded border text-sm cursor-pointer transition
-    ${isActive ? "bg-black text-white" : "bg-white text-gray-700 hover:bg-gray-200 border-gray-300"}`;
-
-  btn.addEventListener("click", () => {
-    currentPage = page;
-    renderPagination();
-  });
-
-  return btn;
-}
-
-function createDots() {
-  const dots = document.createElement("li");
-  dots.textContent = "...";
-  dots.className = "text-gray-400 text-sm";
-  return dots;
-}
-
-function renderPagination() {
-  pagination.innerHTML = "";
-
-  const range = Math.floor(visiblePages / 2);
-  let start = currentPage - range;
-  let end = currentPage + range;
-
-  if (start < 2) {
-    start = 2;
-    end = start + visiblePages - 1;
-  }
-
-  if (end > totalPages - 1) {
-    end = totalPages - 1;
-    start = end - visiblePages + 1;
-    if (start < 2) start = 2;
-  }
-
-  // Always show first page
-  pagination.appendChild(createPageButton(1, currentPage === 1));
-
-  if (start > 2) pagination.appendChild(createDots());
-
-  // Middle range
-  for (let i = start; i <= end; i++) {
-    pagination.appendChild(createPageButton(i, currentPage === i));
-  }
-
-  if (end < totalPages - 1) pagination.appendChild(createDots());
-
-  // Always show last page
-  pagination.appendChild(createPageButton(totalPages, currentPage === totalPages));
-}
-
-// Arrow functionality
-prevBtn.addEventListener("click", () => {
-  if (currentPage > 1) {
-    currentPage--;
-    renderPagination();
-  }
-});
-
-nextBtn.addEventListener("click", () => {
-  if (currentPage < totalPages) {
-    currentPage++;
-    renderPagination();
-  }
-});
-
-// Initial render
-renderPagination();
