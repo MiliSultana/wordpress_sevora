@@ -76,20 +76,30 @@
 
                 <!-- 1440px Body Container -->
 
-                <div class=" min-h-[80vh] relative overflow-hidden bg-[#121212] mx-auto">
+                <div class=" h-auto relative overflow-hidden bg-[#121212] mx-auto">
 
                     <!-- Background Image on Right -->
-                    <div class="hidden md:block absolute top-0 left-0 w-1/2 h-full">
-                        <img src="images/blogBackground.png" alt="Right side" class="w-full h-full object-cover" />
-                    </div>
+                    <!-- Image Section -->
+<div class="hidden md:block absolute top-0 left-0 w-1/2 h-full">
+    <img src="images/blogBackground.png" alt="Right side" class="w-full h-full object-cover" />
+</div>
 
-                    <!-- Blur Glow Effect -->
-                    <div
-                        class="absolute top-[120px] left-[240px]  w-[350px] h-[350px] bg-[#666666] opacity-[50%] rounded-full blur-[200px] z-10">
-                    </div>
+<!-- Blur Glow Effect -->
+<div
+    class="
+        absolute
+        top-[60px] sm:top-[80px] md:top-[100px] lg:top-[110px] xl:top-[120px] 2xl:top-[120px]
+        left-[80px] sm:left-[120px] md:left-[180px] lg:left-[200px] xl:left-[240px] 2xl:left-[240px]
+        w-[200px] sm:w-[250px] md:w-[300px] lg:w-[320px] xl:w-[350px] 2xl:w-[350px]
+        h-[200px] sm:h-[250px] md:h-[300px] lg:h-[320px] xl:h-[350px] 2xl:h-[350px]
+        bg-[#666666] opacity-[50%] rounded-full blur-[120px] sm:blur-[150px] md:blur-[180px] lg:blur-[190px] xl:blur-[200px] 2xl:blur-[200px]
+        z-10
+    ">
+</div>
+
 
                     <div
-                        class="flex flex-col md:flex-row items-center md:items-center text-[#FFFFFF] min-h-[620px] py-6 md:py-0 px-4 md:px-[100px] gap-[58px]">
+                        class="flex flex-col md:flex-row items-center md:items-center text-[#FFFFFF] md:min-h-[300px] lg:md:min-h-[450px] xl:min-h-[600px] py-6 md:py-0  gap-[58px]">
 
 
 
@@ -104,11 +114,11 @@
                         </div>
                         <div class="w-full md:w-1/2 h-full flex flex-col justify-center text-center md:text-left">
                             <h1
-                                class="text-[20px] md:text-[30px] lg:text-[40px] font-instrument-sans font-regular  mb-[12px]">
+                                class="text-[20px] md:text-[20px] lg:text-[29px] xl:text-[40px] font-instrument-sans font-regular  mb-[12px]">
                                 Sparrow-0: Advancing Conversational Responsiveness in Video Agents with
                                 Transformer-Based Turn-Taking
                             </h1>
-                            <p class="font-instrument-sans font-regular text-[16px] leading-[25px] text-[#DBDBDB]">At
+                            <p class="font-instrument-sans font-regular xl:text-[16px] md:text-[14px] leading-[25px] text-[#DBDBDB]">At
                                 Sevora, we’re shaping the e-commerce industry. Join us to solve AI’s toughest
                                 challenges, building systems that see, hear.</p>
                             <a href="#" class="text-[22px] w-[81px] h-[29px] font-instrument-serif relative inline-block text-white  font-medium
@@ -131,7 +141,7 @@
         </div>
     </section>
 
-    <section class="w-full bg-[#F5F3ED] text-white pt-[100px] pb-[60px]">
+    <section class="w-full bg-[#F5F3ED] text-white  pt-[35px] lg:pt-[100px] pb-[60px]">
         <div class="w-full items-center justify-center text-center ">
             <h2 class="text-[52px] font-instrument-serif font-regular text-[#121212] mb-[35px]">Our <span
                     class="text-[#737378]">Blog</span></h2>
@@ -142,7 +152,7 @@
     -->
         <div class="container mx-auto px-4 sm:px-8 md:px-12 2xl:px-[360px]  ">
             <ul
-                class="flex flex-wrap justify-center text-[14px] gap-[11px] font-regular font-instrument-sans  items-center lg:mb-[32px]">
+                class="flex flex-wrap justify-center text-[14px] gap-[11px] font-regular font-instrument-sans  items-center mb-[15px] lg:mb-[32px]">
                 <li class="md:mb-[8px] sm:mb-[8px] mb-[8px]">
                     <a href="#home" class="relative w-[109px] h-[29px] py-[6px] px-[28px]  border  border-[#737378] text-[#424245] transition duration-300
                 hover:text-white hover:bg-black   ">
@@ -201,16 +211,16 @@
 
         </div>
         <div
-            class="container mx-auto px-4 sm:px-8 md:px-12 lg:px-[104px] xl:px-[232px] 2xl:px-[360px] flex flex-col md:flex-row  text-[#121212]   gap-[40px]">
+            class="container mx-auto px-4 sm:px-8  md:px-12 lg:px-[104px] xl:px-[232px] 2xl:px-[360px] flex flex-col md:flex-row  text-[#121212]   gap-[40px]">
 
             <div class="w-full md:w-1/2 h-full relative flex   ">
 
 
                 <div
-                    class="flex flex-col items-center justify-center text-center md:items-start md:justify-start md:text-left">
+                    class="flex flex-col items-center justify-center text-center md:items-start md:justify-start  md:text-left">
                     <img src="images/blogImg2.png" alt="" class="w-[400px] h-[270px] ">
 
-                    <h3 class="mt-[16px] text-[28px] font-regular font-instrument-sans  ">Accelerating conversational AI
+                    <h3 class="mt-[16px] sm:text-[17px]  md:text-[23px] lg:text-[28px] font-regular font-instrument-sans  ">Accelerating conversational AI
                         with Sparrow: Smart Turn Detection</h3>
                 </div>
 
@@ -229,7 +239,7 @@
                         <span class="text-[12px] font-medium font-instrument-sans">July 25 2025</span>
                     </p>
 
-                    <h3 class="text-[20px] font-400 font-instrument-sans leading-[26px] text-[#121212]">Accelerating
+                    <h3 class="sm:text-[17px] md:text-[20px]  font-400 font-instrument-sans leading-[26px] text-[#121212]">Accelerating
                         conversational AI with Sparrow: Smart Turn Detection</h3>
                 </div>
                 <div class="mb-[32px]">
@@ -245,7 +255,7 @@
                         <span class="text-[12px] font-medium font-instrument-sans">July 25 2025</span>
                     </p>
 
-                    <h3 class="text-[20px] font-400 font-instrument-sans leading-[26px] text-[#121212]">Accelerating
+                    <h3 class="sm:text-[17px] md:text-[20px] font-400 font-instrument-sans leading-[26px] text-[#121212]">Accelerating
                         conversational AI with Sparrow: Smart Turn Detection</h3>
                 </div>
                 <div>
@@ -261,7 +271,7 @@
                         <span class="text-[12px] font-medium font-instrument-sans">July 25 2025</span>
                     </p>
 
-                    <h3 class="text-[20px] font-400 font-instrument-sans leading-[26px] text-[#121212]">Accelerating
+                    <h3 class="sm:text-[17px] md:text-[20px] font-400 font-instrument-sans leading-[26px] text-[#121212]">Accelerating
                         conversational AI with Sparrow: Smart Turn Detection</h3>
                 </div>
 
@@ -278,16 +288,16 @@
     </div>
 
 
-    <section class="w-full bg-[#F5F3ED] pt-[60px] text-black">
+    <section class="w-full bg-[#F5F3ED] pt-[25px] md:pt-[60px] text-black">
   <div class="container mx-auto px-4 sm:px-8 md:px-12 lg:px-[104px] xl:px-[232px] 2xl:px-[360px]">
-    <h2 class="text-regular text-[36px] text-[#121212] font-instrument-serif mb-[24px]">More articles</h2>
+    <h2 class="text-regular text-center md:text-left text-[36px] text-[#121212] font-instrument-serif mb-[24px]">More articles</h2>
   </div>
 
   <div class="container mx-auto px-4 sm:px-8 md:px-12 lg:px-[104px] xl:px-[232px] 2xl:px-[360px] flex flex-col md:flex-row gap-[20px]">
     
     <!-- Image Container -->
     <div class="w-full md:w-[350px] flex justify-center md:justify-start lg:mb-[40px] xl:mb-[40px] 2xl:mb-[40px] ">
-      <img src="images/blogImg2.png" alt="Blog Image" class="w-full h-[160px] object-cover " />
+      <img src="images/blogImg2.png" alt="Blog Image" class="w-full h-[160px]  " />
     </div>
 
     <!-- Content -->
@@ -296,16 +306,16 @@
         <p class="text-[12px] font-medium font-instrument-sans mb-[8px] text-[#424245] flex items-center gap-1 justify-center md:justify-start">
           <span class="tracking-[1.5px] flex items-center">
             CATEGORIES
-            <img src="images/blogSquareIcon.png" alt="Box Icon" class="mx-[10px]" />
+            <img src="images/blogSquareIcon.png" alt="Box Icon" class="mx-[10px] " />
           </span>
           <span class="text-[12px] font-medium font-instrument-sans">July 25 2025</span>
         </p>
 
-        <h3 class="text-[20px] font-400 font-instrument-sans leading-[26px] mb-[8px] text-[#121212]">
+        <h3 class="text-[17px] md:text-[20px] font-400 font-instrument-sans leading-[26px] mb-[8px] text-[#121212]">
           Accelerating conversational AI with Sparrow: Smart Turn Detection
         </h3>
 
-        <p class="text-[14px] mb-[20px] font-instrument-sans font-400 leading-[21px] tracking-[0.5px] text-[#737378]">
+        <p class="text-[13px] md:text-[14px] mb-[20px] font-instrument-sans font-400 leading-[21px] tracking-[0.5px] text-[#737378]">
           At Sevora, we’re shaping the e-commerce industry. Join us to solve AI’s toughest challenges,
           building systems that see, hear.
         </p>
@@ -320,7 +330,7 @@
     
     <!-- Image Container -->
     <div class="w-full md:w-[350px] flex justify-center md:justify-start lg:mb-[40px] xl:mb-[40px] 2xl:mb-[40px]">
-      <img src="images/blogImg2.png" alt="Blog Image" class="w-full h-[160px] object-cover " />
+      <img src="images/blogImg2.png" alt="Blog Image" class="w-full h-[160px] " />
     </div>
 
     <!-- Content -->
@@ -329,16 +339,16 @@
         <p class="text-[12px] font-medium font-instrument-sans mb-[8px] text-[#424245] flex items-center gap-1 justify-center md:justify-start">
           <span class="tracking-[1.5px] flex items-center">
             CATEGORIES
-            <img src="images/blogSquareIcon.png" alt="Box Icon" class="mx-[10px]" />
+            <img src="images/blogSquareIcon.png" alt="Box Icon" class="mx-[10px] " />
           </span>
           <span class="text-[12px] font-medium font-instrument-sans">July 25 2025</span>
         </p>
 
-        <h3 class="text-[20px] font-400 font-instrument-sans leading-[26px] mb-[8px] text-[#121212]">
+        <h3 class="text-[17px] md:text-[20px] font-400 font-instrument-sans leading-[26px] mb-[8px] text-[#121212]">
           Accelerating conversational AI with Sparrow: Smart Turn Detection
         </h3>
 
-        <p class="text-[14px] mb-[20px] font-instrument-sans font-400 leading-[21px] tracking-[0.5px] text-[#737378]">
+        <p class="text-[13px] md:text-[14px] mb-[20px] font-instrument-sans font-400 leading-[21px] tracking-[0.5px] text-[#737378]">
           At Sevora, we’re shaping the e-commerce industry. Join us to solve AI’s toughest challenges,
           building systems that see, hear.
         </p>
@@ -352,7 +362,7 @@
     
     <!-- Image Container -->
     <div class="w-full md:w-[350px] flex justify-center md:justify-start lg:mb-[40px] xl:mb-[40px] 2xl:mb-[40px]">
-      <img src="images/blogImg2.png" alt="Blog Image" class="w-full h-[160px] object-cover " />
+      <img src="images/blogImg2.png" alt="Blog Image" class="w-full h-[160px] " />
     </div>
 
     <!-- Content -->
@@ -366,11 +376,11 @@
           <span class="text-[12px] font-medium font-instrument-sans">July 25 2025</span>
         </p>
 
-        <h3 class="text-[20px] font-400 font-instrument-sans leading-[26px] mb-[8px] text-[#121212]">
+        <h3 class="text-[17px] md:text-[20px] font-400 font-instrument-sans leading-[26px] mb-[8px] text-[#121212]">
           Accelerating conversational AI with Sparrow: Smart Turn Detection
         </h3>
 
-        <p class="text-[14px] mb-[20px] font-instrument-sans font-400 leading-[21px] tracking-[0.5px] text-[#737378]">
+        <p class="text-[13px] md:text-[14px] mb-[20px] font-instrument-sans font-400 leading-[21px] tracking-[0.5px] text-[#737378]">
           At Sevora, we’re shaping the e-commerce industry. Join us to solve AI’s toughest challenges,
           building systems that see, hear.
         </p>
@@ -384,7 +394,7 @@
     
     <!-- Image Container -->
     <div class="w-full md:w-[350px] flex justify-center md:justify-start lg:mb-[40px] xl:mb-[40px] 2xl:mb-[40px]">
-      <img src="images/blogImg2.png" alt="Blog Image" class="w-full h-[160px] object-cover " />
+      <img src="images/blogImg2.png" alt="Blog Image" class="w-full h-[160px] " />
     </div>
 
     <!-- Content -->
@@ -398,11 +408,11 @@
           <span class="text-[12px] font-medium font-instrument-sans">July 25 2025</span>
         </p>
 
-        <h3 class="text-[20px] font-400 font-instrument-sans leading-[26px] mb-[8px] text-[#121212]">
+        <h3 class="text-[17px] md:text-[20px] font-400 font-instrument-sans leading-[26px] mb-[8px] text-[#121212]">
           Accelerating conversational AI with Sparrow: Smart Turn Detection
         </h3>
 
-        <p class="text-[14px] mb-[20px] font-instrument-sans font-400 leading-[21px] tracking-[0.5px] text-[#737378]">
+        <p class="text-[13px] md:text-[14px] mb-[20px] font-instrument-sans font-400 leading-[21px] tracking-[0.5px] text-[#737378]">
           At Sevora, we’re shaping the e-commerce industry. Join us to solve AI’s toughest challenges,
           building systems that see, hear.
         </p>
@@ -416,7 +426,7 @@
     
     <!-- Image Container -->
     <div class="w-full md:w-[350px] flex justify-center md:justify-start lg:mb-[100px] xl:mb-[100px] 2xl:mb-[100px]">
-      <img src="images/blogImg2.png" alt="Blog Image" class="w-full h-[160px] object-cover " />
+      <img src="images/blogImg2.png" alt="Blog Image" class="w-full h-[160px] " />
     </div>
 
     <!-- Content -->
@@ -430,11 +440,11 @@
           <span class="text-[12px] font-medium font-instrument-sans">July 25 2025</span>
         </p>
 
-        <h3 class="text-[20px] font-400 font-instrument-sans leading-[26px] mb-[8px] text-[#121212]">
+        <h3 class="text-[17px] md:text-[20px] font-400 font-instrument-sans leading-[26px] mb-[8px] text-[#121212]">
           Accelerating conversational AI with Sparrow: Smart Turn Detection
         </h3>
 
-        <p class="text-[14px] mb-[20px] font-instrument-sans font-400 leading-[21px] tracking-[0.5px] text-[#737378]">
+        <p class="text-[13px] md:text-[14px] mb-[20px] font-instrument-sans font-400 leading-[21px] tracking-[0.5px] text-[#737378]">
           At Sevora, we’re shaping the e-commerce industry. Join us to solve AI’s toughest challenges,
           building systems that see, hear.
         </p>
