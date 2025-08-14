@@ -95,180 +95,60 @@
 </section>
 
 
-<div class="profile-card" data-description="Starting his career as an SEO specialist, Mashum quickly realized his potential and passion for
-                creating something
-                of his own. In 2018, he founded Viacon, a company that has rapidly grown under his leadership to
-                achieve a
-                remarkable milestone of becoming a one-million-dollar enterprise by 2022.
-                Mashum’s entrepreneurial acumen led to the creation and success of three distinguished brands:
-                RHN, Blog Management,
-                and Blogger Outreach. These brands have flourished under his strategic direction, establishing
-                themselves as significant
-                players in their respective domains. As the founder and visionary behind Viacon, Mashum’s
-                mission is to expand the
-                business on a global scale, ensuring long-term and sustainable growth while steering the
-                company’s voice and vision." class="bg-[#F5F3ED] text-white relative">
-    <div class="name-title hidden px-[16px] pt-[16px] font-instrument-sans font-medium relative">
-        <h3 class="text-[18px] text-[#121212]">Mashum Mollah</h3>
-        <p class="text-[11px] text-[#737378]">CEO &amp; FOUNDER</p>
-        <button class="close-btn hidden absolute top-[16px] right-[16px] border-[1px] border-black bg-[#F5F3ED]">
-            <img src="images/cross.png" alt="Close" class="w-[18px] h-[18px] p-[4px]" />
-        </button>
-    </div>
 
-    <div class="content-area relative">
-        <img src="images/sir.png" alt="Team Member" class="w-[300px] h-[300px] z-10" />
-    </div>
 
-    <div class="footer-section flex justify-between items-center py-[19px] px-[16px] font-medium">
-        <div class="font-instrument-sans font-medium w-[328px] h-[41px]">
-            <h3 class="text-[18px] text-[#121212]">Mashum Mollah</h3>
-            <p class="text-[11px] text-[#737378]">CEO &amp; FOUNDER</p>
-        </div>
-        <div>
-            <button class="toggle-btn bg-[#F5F3ED] border border-[#F5F3ED] hover:bg-[#F5F3ED] transition">
-                <img src="images/Add.png" alt="Add"
-                    class="w-[20px] h-[20px] p-[3px] border-[1px] border-black" />
-            </button>
-        </div>
-    </div>
+
+
+
+<div class="flex items-center gap-4 w-full max-w-md">
+  <!-- Left Arrow Button -->
+  <button 
+    class="p-3 rounded-full bg-gray-200 hover:bg-gray-300 transition" 
+    onclick="prevSlide()">
+    <img src="images/LeftArrow.png" alt="Left Arrow" class="w-6 h-6">
+  </button>
+
+  <!-- Horizontal Progress Bar -->
+  <div class="relative flex-1 h-[4px] bg-gray-300 rounded cursor-pointer" onclick="middleClick()">
+    <div id="progress" class="absolute left-0 top-0 h-full bg-black transition-all duration-300" style="width: 0%;"></div>
+  </div>
+
+  <!-- Right Arrow Button -->
+  <button 
+    class="p-3 rounded-full bg-gray-200 hover:bg-gray-300 transition" 
+    onclick="nextSlide()">
+    <img src="images/RightArrow.png" alt="Right Arrow" class="w-6 h-6">
+  </button>
 </div>
 
+<script>
+let currentSlide = 0;
+const totalSlides = 5; // adjust this
 
+function updateProgress() {
+  const progress = document.getElementById("progress");
+  const percentage = (currentSlide / (totalSlides - 1)) * 100;
+  progress.style.width = percentage + "%";
+}
 
+function prevSlide() {
+  if (currentSlide > 0) {
+    currentSlide--;
+    updateProgress();
+  }
+}
 
+function nextSlide() {
+  if (currentSlide < totalSlides - 1) {
+    currentSlide++;
+    updateProgress();
+  }
+}
 
-
-<div class="profile-card" data-description="Starting his career as an SEO specialist, Mashum quickly realized his potential and passion for
-                creating something
-                of his own. In 2018, he founded Viacon, a company that has rapidly grown under his leadership to
-                achieve a
-                remarkable milestone of becoming a one-million-dollar enterprise by 2022.
-                Mashum’s entrepreneurial acumen led to the creation and success of three distinguished brands:
-                RHN, Blog Management,
-                and Blogger Outreach. These brands have flourished under his strategic direction, establishing
-                themselves as significant
-                players in their respective domains. As the founder and visionary behind Viacon, Mashum’s
-                mission is to expand the
-                business on a global scale, ensuring long-term and sustainable growth while steering the
-                company’s voice and vision." class="bg-[#F5F3ED] text-white relative">
-    <div class="name-title hidden px-[16px] pt-[16px] font-instrument-sans font-medium relative">
-        <h3 class="text-[18px] text-[#121212]">Mashum Mollah</h3>
-        <p class="text-[11px] text-[#737378]">CEO &amp; FOUNDER</p>
-        <button class="close-btn hidden absolute top-[16px] right-[16px] border-[1px] border-black bg-[#F5F3ED]">
-            <img src="images/cross.png" alt="Close" class="w-[18px] h-[18px] p-[4px]" />
-        </button>
-    </div>
-
-    <div class="content-area relative">
-        <img src="images/sir.png" alt="Team Member" class="w-[300px] h-[300px] z-10" />
-    </div>
-
-    <div class="footer-section flex justify-between items-center py-[19px] px-[16px] font-medium">
-        <div class="font-instrument-sans font-medium w-[328px] h-[41px]">
-            <h3 class="text-[18px] text-[#121212]">Mashum Mollah</h3>
-            <p class="text-[11px] text-[#737378]">CEO &amp; FOUNDER</p>
-        </div>
-        <div>
-            <button class="toggle-btn bg-[#F5F3ED] border border-[#F5F3ED] hover:bg-[#F5F3ED] transition">
-                <img src="images/Add.png" alt="Add"
-                    class="w-[20px] h-[20px] p-[3px] border-[1px] border-black" />
-            </button>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-<div class="profile-card" data-description="Starting his career as an SEO specialist, Mashum quickly realized his potential and passion for
-                creating something
-                of his own. In 2018, he founded Viacon, a company that has rapidly grown under his leadership to
-                achieve a
-                remarkable milestone of becoming a one-million-dollar enterprise by 2022.
-                Mashum’s entrepreneurial acumen led to the creation and success of three distinguished brands:
-                RHN, Blog Management,
-                and Blogger Outreach. These brands have flourished under his strategic direction, establishing
-                themselves as significant
-                players in their respective domains. As the founder and visionary behind Viacon, Mashum’s
-                mission is to expand the
-                business on a global scale, ensuring long-term and sustainable growth while steering the
-                company’s voice and vision." class="bg-[#F5F3ED] text-white relative">
-    <div class="name-title hidden px-[16px] pt-[16px] font-instrument-sans font-medium relative">
-        <h3 class="text-[18px] text-[#121212]">Mashum Mollah</h3>
-        <p class="text-[11px] text-[#737378]">CEO &amp; FOUNDER</p>
-        <button class="close-btn hidden absolute top-[16px] right-[16px] border-[1px] border-black bg-[#F5F3ED]">
-            <img src="images/cross.png" alt="Close" class="w-[18px] h-[18px] p-[4px]" />
-        </button>
-    </div>
-
-    <div class="content-area relative">
-        <img src="images/sir.png" alt="Team Member" class="w-[300px] h-[300px] z-10" />
-    </div>
-
-    <div class="footer-section flex justify-between items-center py-[19px] px-[16px] font-medium">
-        <div class="font-instrument-sans font-medium w-[328px] h-[41px]">
-            <h3 class="text-[18px] text-[#121212]">Mashum Mollah</h3>
-            <p class="text-[11px] text-[#737378]">CEO &amp; FOUNDER</p>
-        </div>
-        <div>
-            <button class="toggle-btn bg-[#F5F3ED] border border-[#F5F3ED] hover:bg-[#F5F3ED] transition">
-                <img src="images/Add.png" alt="Add"
-                    class="w-[20px] h-[20px] p-[3px] border-[1px] border-black" />
-            </button>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-<div class="profile-card" data-description="Starting his career as an SEO specialist, Mashum quickly realized his potential and passion for
-                creating something
-                of his own. In 2018, he founded Viacon, a company that has rapidly grown under his leadership to
-                achieve a
-                remarkable milestone of becoming a one-million-dollar enterprise by 2022.
-                Mashum’s entrepreneurial acumen led to the creation and success of three distinguished brands:
-                RHN, Blog Management,
-                and Blogger Outreach. These brands have flourished under his strategic direction, establishing
-                themselves as significant
-                players in their respective domains. As the founder and visionary behind Viacon, Mashum’s
-                mission is to expand the
-                business on a global scale, ensuring long-term and sustainable growth while steering the
-                company’s voice and vision." class="bg-[#F5F3ED] text-white relative">
-    <div class="name-title hidden px-[16px] pt-[16px] font-instrument-sans font-medium relative">
-        <h3 class="text-[18px] text-[#121212]">Mashum Mollah</h3>
-        <p class="text-[11px] text-[#737378]">CEO &amp; FOUNDER</p>
-        <button class="close-btn hidden absolute top-[16px] right-[16px] border-[1px] border-black bg-[#F5F3ED]">
-            <img src="images/cross.png" alt="Close" class="w-[18px] h-[18px] p-[4px]" />
-        </button>
-    </div>
-
-    <div class="content-area relative">
-        <img src="images/sir.png" alt="Team Member" class="w-[300px] h-[300px] z-10" />
-    </div>
-
-    <div class="footer-section flex justify-between items-center py-[19px] px-[16px] font-medium">
-        <div class="font-instrument-sans font-medium w-[328px] h-[41px]">
-            <h3 class="text-[18px] text-[#121212]">Mashum Mollah</h3>
-            <p class="text-[11px] text-[#737378]">CEO &amp; FOUNDER</p>
-        </div>
-        <div>
-            <button class="toggle-btn bg-[#F5F3ED] border border-[#F5F3ED] hover:bg-[#F5F3ED] transition">
-                <img src="images/Add.png" alt="Add"
-                    class="w-[20px] h-[20px] p-[3px] border-[1px] border-black" />
-            </button>
-        </div>
-    </div>
-</div>
-
-
-
-
+function middleClick() {
+  nextSlide(); // clicking progress bar jumps forward
+}
+</script>
 
 
 
