@@ -1,3 +1,17 @@
+
+  const menuToggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu");
+  const hamburger = document.getElementById("hamburger");
+  const closeIcon = document.getElementById("close");
+
+  menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("hidden");   // show/hide menu
+    hamburger.classList.toggle("hidden"); // swap icons
+    closeIcon.classList.toggle("hidden");
+  });
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.profile-card').forEach(card => {
         const toggleBtn = card.querySelector('.toggle-btn');
