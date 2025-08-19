@@ -1,4 +1,4 @@
-
+//for the navbar..
   const menuToggle = document.getElementById("menu-toggle");
   const menu = document.getElementById("menu");
   const hamburger = document.getElementById("hamburger");
@@ -11,7 +11,7 @@
   });
 
 
-
+//for the image and peragraph..
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.profile-card').forEach(card => {
         const toggleBtn = card.querySelector('.toggle-btn');
