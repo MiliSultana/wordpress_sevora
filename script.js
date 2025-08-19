@@ -11,7 +11,7 @@
   });
 
 
-//for the image and peragraph..
+//for the image and peragraph of 2nd page..
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.profile-card').forEach(card => {
         const toggleBtn = card.querySelector('.toggle-btn');
@@ -26,17 +26,84 @@ document.addEventListener('DOMContentLoaded', () => {
             nameTitle.classList.remove('hidden');
             closeBtn.classList.remove('hidden');
             footer.style.display = 'none';
-            contentArea.innerHTML = `<p class="text-[14px] font-instrument-sans leading-[18px] tracking-[1px] text-[#424245] p-[16px]">${description}</p>`;
+
+            // Insert paragraph with transition styles
+            contentArea.innerHTML = `
+              <p style="
+                opacity: 0;
+                transform: translateY(20px);
+                transition: opacity 0.4s ease, transform 0.4s ease;
+              " class="text-[14px] font-instrument-sans leading-[18px] tracking-[1px] text-[#424245] p-[16px]">
+                ${description}
+              </p>`;
+
+            // Trigger the animation
+            requestAnimationFrame(() => {
+                const paragraph = contentArea.querySelector('p');
+                paragraph.style.opacity = '1';
+                paragraph.style.transform = 'translateY(0)';
+            });
         });
 
         closeBtn.addEventListener('click', () => {
-            nameTitle.classList.add('hidden');
-            closeBtn.classList.add('hidden');
-            footer.style.display = 'flex';
-            contentArea.innerHTML = originalImage;
+            const paragraph = contentArea.querySelector('p');
+            if (paragraph) {
+                // Animate out
+                paragraph.style.opacity = '0';
+                paragraph.style.transform = 'translateY(20px)';
+
+                setTimeout(() => {
+                    contentArea.innerHTML = originalImage;
+                    nameTitle.classList.add('hidden');
+                    closeBtn.classList.add('hidden');
+                    footer.style.display = 'flex';
+                }, 300); // Match transition duration
+            } else {
+                // Fallback
+                nameTitle.classList.add('hidden');
+                closeBtn.classList.add('hidden');
+                footer.style.display = 'flex';
+                contentArea.innerHTML = originalImage;
+            }
         });
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const cards = document.querySelectorAll('.profile-card');
+
+  cards.forEach(card => {
+    const contentArea = card.querySelector('.content-area');
+    const image = contentArea.querySelector('img');
+    const toggleBtn = card.querySelector('.toggle-btn img');
+
+    // Ensure image container clips overflow (to prevent layout shift)
+    contentArea.style.overflow = 'hidden';
+
+    // Add smooth transition for image and button
+    image.style.transition = 'transform 0.4s ease';
+    toggleBtn.style.transition = 'transform 0.3s ease';
+
+    // Add card shadow & slight lift on hover
+    card.style.transition = 'box-shadow 0.3s ease, transform 0.3s ease';
+
+    card.addEventListener('mouseenter', () => {
+      image.style.transform = 'scale(1.05)';  // Zooms inside container
+      card.style.boxShadow = '0 8px 24px rgba(0,0,0,0.1)';
+      card.style.transform = 'translateY(-4px)';
+    });
+
+    card.addEventListener('mouseleave', () => {
+      image.style.transform = 'scale(1)';
+      card.style.boxShadow = 'none';
+      card.style.transform = 'translateY(0)';
+    });
+
+    
+  });
+});
+
 
 // card for the peragraph
 

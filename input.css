@@ -26,6 +26,7 @@ font-family: "Instrument Sans", sans-serif;
         .marquee-track {
             animation: scrollMarquee 25s linear infinite;
         }
+/* for image and peragrapg */
 
 /** {
   margin: 0;
@@ -46,7 +47,9 @@ body, html {
   
 }
 
-
+.scrollbar-track-y{
+  display: none !important;
+}
 
 
 /* Black Section Layout */
