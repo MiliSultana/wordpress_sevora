@@ -110,12 +110,7 @@ body, html {
  
 }
 /* Responsive container padding */
-@media (max-width: 1024px) {
-  .container {
-    padding-left: 60px !important;
-    padding-right: 60px !important;
-  }
-}
+
 
 @media (max-width: 768px) {
   .panel, .panel-text {
