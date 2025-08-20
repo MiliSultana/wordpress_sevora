@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <p style="
                 opacity: 0;
                 transform: translateY(20px);
-                transition: opacity 0.4s ease, transform 0.4s ease;
+                transition: opacity 0.6s ease, transform 0.6s ease;
               " class="text-[14px] font-instrument-sans leading-[18px] tracking-[1px] text-[#424245] p-[16px]">
                 ${description}
               </p>`;
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-        closeBtn.addEventListener('click', () => {
+closeBtn.addEventListener('click', () => {
             const paragraph = contentArea.querySelector('p');
             if (paragraph) {
                 // Animate out
@@ -82,11 +82,11 @@ document.addEventListener('DOMContentLoaded', () => {
     contentArea.style.overflow = 'hidden';
 
     // Add smooth transition for image and button
-    image.style.transition = 'transform 0.4s ease';
-    toggleBtn.style.transition = 'transform 0.3s ease';
+    image.style.transition = 'transform 0.6s ease';
+    toggleBtn.style.transition = 'transform 0.6s ease';
 
     // Add card shadow & slight lift on hover
-    card.style.transition = 'box-shadow 0.3s ease, transform 0.3s ease';
+    card.style.transition = 'box-shadow 0.6s ease, transform 0.6s ease';
 
     card.addEventListener('mouseenter', () => {
       image.style.transform = 'scale(1.05)';  // Zooms inside container
