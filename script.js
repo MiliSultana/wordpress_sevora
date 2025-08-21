@@ -11,6 +11,38 @@
   });
 
 
+//step progress bar
+
+let currentSlide = 0;
+const totalSlides = 11; // adjust this
+
+function updateProgress() {
+  const progress = document.getElementById("progress");
+  const percentage = (currentSlide / (totalSlides - 1)) * 100;
+  progress.style.width = percentage + "%";
+}
+
+function prevSlide() {
+  if (currentSlide > 0) {
+    currentSlide--;
+    updateProgress();
+  }
+}
+
+function nextSlide() {
+  if (currentSlide < totalSlides - 1) {
+    currentSlide++;
+    updateProgress();
+  }
+}
+
+function middleClick() {
+  nextSlide(); // clicking progress bar jumps forward
+}
+
+
+
+
 //for the image and peragraph of 2nd page..
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.profile-card').forEach(card => {

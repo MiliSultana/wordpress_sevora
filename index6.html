@@ -203,6 +203,95 @@ function middleClick() {
 </script>
 
 
+  <div class="w-full max-w-2xl p-6 bg-white shadow-lg rounded-2xl">
+    
+    <!-- Progress Bar -->
+    <div class="relative mb-10">
+      <div class="absolute top-1/2 left-0 w-full h-1 bg-gray-300 -translate-y-1/2"></div>
+      <div id="progress" class="absolute top-1/2 left-0 h-1 bg-blue-500 -translate-y-1/2 transition-all duration-300" style="width: 0%;"></div>
+      
+      <div class="relative flex justify-between">
+        <div class="step w-10 h-10 flex items-center justify-center rounded-full bg-gray-300 text-white font-bold">1</div>
+        <div class="step w-10 h-10 flex items-center justify-center rounded-full bg-gray-300 text-white font-bold">2</div>
+        <div class="step w-10 h-10 flex items-center justify-center rounded-full bg-gray-300 text-white font-bold">3</div>
+        <div class="step w-10 h-10 flex items-center justify-center rounded-full bg-gray-300 text-white font-bold">4</div>
+      </div>
+    </div>
+
+    <!-- Step Content -->
+    <div id="step-content" class="text-center text-lg font-medium mb-6">
+      Step 1: Personal Information
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex justify-between">
+      <button id="prev" class="px-6 py-2 bg-gray-300 text-gray-700 rounded-lg cursor-not-allowed" disabled>
+        Prev
+      </button>
+      <button id="next" class="px-6 py-2 bg-blue-500 text-white rounded-lg">
+        Next
+      </button>
+    </div>
+  </div>
+
+  <script>
+    const steps = document.querySelectorAll(".step");
+    const progress = document.getElementById("progress");
+    const prevBtn = document.getElementById("prev");
+    const nextBtn = document.getElementById("next");
+    const content = document.getElementById("step-content");
+
+    let currentStep = 1;
+
+    const stepMessages = [
+      "Step 1: Personal Information",
+      "Step 2: Address Details",
+      "Step 3: Payment Information",
+      "Step 4: Review & Submit"
+    ];
+
+    function updateSteps() {
+      steps.forEach((step, i) => {
+        if (i < currentStep) {
+          step.classList.add("bg-blue-500");
+          step.classList.remove("bg-gray-300");
+        } else {
+          step.classList.remove("bg-blue-500");
+          step.classList.add("bg-gray-300");
+        }
+      });
+
+      progress.style.width = ((currentStep - 1) / (steps.length - 1)) * 100 + "%";
+      content.textContent = stepMessages[currentStep - 1];
+
+      prevBtn.disabled = currentStep === 1;
+      prevBtn.classList.toggle("cursor-not-allowed", currentStep === 1);
+      prevBtn.classList.toggle("bg-gray-300", currentStep === 1);
+      prevBtn.classList.toggle("bg-blue-500", currentStep > 1);
+      prevBtn.classList.toggle("text-white", currentStep > 1);
+
+      nextBtn.textContent = currentStep === steps.length ? "Finish" : "Next";
+    }
+
+    nextBtn.addEventListener("click", () => {
+      if (currentStep < steps.length) {
+        currentStep++;
+        updateSteps();
+      }
+    });
+
+    prevBtn.addEventListener("click", () => {
+      if (currentStep > 1) {
+        currentStep--;
+        updateSteps();
+      }
+    });
+
+    updateSteps();
+  </script>
+
+
+
 
  <div class="relative w-full  h-[1px] bg-[#DBDBDB] mx-auto"></div>
 
