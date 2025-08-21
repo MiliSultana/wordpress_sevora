@@ -1561,6 +1561,12 @@
       position: absolute;
     }
   }
+  .after\:-bottom-1 {
+    &::after {
+      content: var(--tw-content);
+      bottom: calc(var(--spacing) * -1);
+    }
+  }
   .after\:bottom-\[-4px\] {
     &::after {
       content: var(--tw-content);
@@ -1616,6 +1622,13 @@
       content: var(--tw-content);
       --tw-duration: 300ms;
       transition-duration: 300ms;
+    }
+  }
+  .after\:content-\[\"\"\] {
+    &::after {
+      content: var(--tw-content);
+      --tw-content: "";
+      content: var(--tw-content);
     }
   }
   .after\:content-\[\'\'\] {
