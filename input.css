@@ -13,6 +13,7 @@ font-family: "Instrument Sans", sans-serif;
      font-weight: 700;
      font-size: 16px;
 }
+
 @keyframes scrollMarquee {
             0% {
                 transform: translateX(0%);
