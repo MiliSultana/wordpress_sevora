@@ -2594,6 +2594,11 @@
       left: 550px;
     }
   }
+  .lg\:mx-\[103px\] {
+    @media (width >= 64rem) {
+      margin-inline: 103px;
+    }
+  }
   .lg\:mt-\[20px\] {
     @media (width >= 64rem) {
       margin-top: 20px;
@@ -2890,6 +2895,16 @@
       left: 430px;
     }
   }
+  .xl\:mx-\[123px\] {
+    @media (width >= 80rem) {
+      margin-inline: 123px;
+    }
+  }
+  .xl\:mx-\[145px\] {
+    @media (width >= 80rem) {
+      margin-inline: 145px;
+    }
+  }
   .xl\:mt-\[-7px\] {
     @media (width >= 80rem) {
       margin-top: -7px;
@@ -3139,6 +3154,26 @@
       left: 508px;
     }
   }
+  .\32 xl\:mx-\[14px\] {
+    @media (width >= 96rem) {
+      margin-inline: 14px;
+    }
+  }
+  .\32 xl\:mx-\[144px\] {
+    @media (width >= 96rem) {
+      margin-inline: 144px;
+    }
+  }
+  .\32 xl\:mx-\[145px\] {
+    @media (width >= 96rem) {
+      margin-inline: 145px;
+    }
+  }
+  .\32 xl\:mx-\[146px\] {
+    @media (width >= 96rem) {
+      margin-inline: 146px;
+    }
+  }
   .\32 xl\:mt-0 {
     @media (width >= 96rem) {
       margin-top: calc(var(--spacing) * 0);
@@ -3344,6 +3379,13 @@
     @media (width >= 96rem) {
       --tw-blur: blur(200px);
       filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+    }
+  }
+  .lg\:2xl\:mx-\[145px\] {
+    @media (width >= 64rem) {
+      @media (width >= 96rem) {
+        margin-inline: 145px;
+      }
     }
   }
 }
