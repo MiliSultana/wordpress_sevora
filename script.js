@@ -1,5 +1,5 @@
 //for the navbar..
-  /*const menuToggle = document.getElementById("menu-toggle");
+  const menuToggle = document.getElementById("menu-toggle");
   const menu = document.getElementById("menu");
   const hamburger = document.getElementById("hamburger");
   const closeIcon = document.getElementById("close");
@@ -8,7 +8,7 @@
     menu.classList.toggle("hidden");   // show/hide menu
     hamburger.classList.toggle("hidden"); // swap icons
     closeIcon.classList.toggle("hidden");
-  });*/
+  });
 
 
 //step progress bar
