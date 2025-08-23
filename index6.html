@@ -13,8 +13,14 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap"
     rel="stylesheet">
-</head>
-
+<style>
+  .blogcatagory {
+    @apply px-4 py-2 rounded bg-gray-200 text-black transition;
+  }
+  .active-btn {
+    @apply bg-blue-500 text-white;
+  }
+</style>
 
 </head>
 
@@ -23,48 +29,7 @@
   <!-- HEADER / NAVIGATION -->
 
 
-  <header class="bg-[#121212]   ">
-
-    <nav class="flex items-center container mx-auto px-[100px] justify-between bg-[#121212] h-[100px] flex-wrap ">
-
-      <!-- Logo -->
-      <div>
-        <img src="images/SEVORA Logo.png" alt="SEVORA Logo" class="w-[215px] h-[48px]" />
-      </div>
-
-      <!-- Navigation Links -->
-      <ul class="flex flex-wrap items-center gap-6 text-[13px] ml-[-280px] font-instrument-sans mt-4 md:mt-0">
-        <li><a href="#"
-            class="relative text-white font-medium after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:h-[2px] after:w-0 after:bg-white hover:after:w-full after:transition-all after:duration-300">ABOUT
-            US</a></li>
-        <li><a href="#"
-            class="relative text-white font-medium after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:h-[2px] after:w-0 after:bg-white hover:after:w-full after:transition-all after:duration-300">OURTEAMS</a>
-        </li>
-        <li><a href="#"
-            class="relative text-white font-medium after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:h-[2px] after:w-0 after:bg-white hover:after:w-full after:transition-all after:duration-300">CAREERS</a>
-        </li>
-        <li><a href="#"
-            class="relative text-white font-medium after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:h-[2px] after:w-0 after:bg-white hover:after:w-full after:transition-all after:duration-300">JOBS</a>
-        </li>
-        <li><a href="#"
-            class="relative text-white font-medium after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:h-[2px] after:w-0 after:bg-white hover:after:w-full after:transition-all after:duration-300">BLOG</a>
-        </li>
-        <li><a href="#"
-            class="relative text-white font-medium after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:h-[2px] after:w-0 after:bg-white hover:after:w-full after:transition-all after:duration-300">NEWS</a>
-        </li>
-      </ul>
-
-      <!-- Back to Home Button -->
-      <div class="mt-4 md:mt-0 w-[181px] h-[44px]">
-        <a href="#" class="inline-flex items-center font-instrument-sans font-medium text-center  py-[13px] px-[26px]
-            bg-[#242424] text-white border border-[#2E2E2E] hover:bg-[#555] text-[13px] transition gap-2">
-          <img src="images/ArrowLeft.png" alt="Back Arrow" class="w-4 h-4" />
-          <span class="">BACK TO HOME</span>
-        </a>
-      </div>
-    </nav>
-
-  </header>
+  
   <header class="bg-[#121212]">
     <nav
       class="flex items-center justify-between mx-auto sm:px-[50px] md:px-[50px] lg:px-[50px] xl:px-[100px] 2xl:px-[160px] h-[100px] relative">
@@ -165,34 +130,7 @@
     </button>
   </div>
 
-  <script>
-    let currentSlide = 0;
-    const totalSlides = 5; // adjust this
-
-    function updateProgress() {
-      const progress = document.getElementById("progress");
-      const percentage = (currentSlide / (totalSlides - 1)) * 100;
-      progress.style.width = percentage + "%";
-    }
-
-    function prevSlide() {
-      if (currentSlide > 0) {
-        currentSlide--;
-        updateProgress();
-      }
-    }
-
-    function nextSlide() {
-      if (currentSlide < totalSlides - 1) {
-        currentSlide++;
-        updateProgress();
-      }
-    }
-
-    function middleClick() {
-      nextSlide(); // clicking progress bar jumps forward
-    }
-  </script>
+  
 
 
   <div class="w-full max-w-2xl p-6 bg-white shadow-lg rounded-2xl">
@@ -233,7 +171,7 @@
 
   <script>
     const steps = document.querySelectorAll(".step");
-    const progress = document.getElementById("progress");
+    const progresss = document.getElementById("progress");
     const prevBtn = document.getElementById("prev");
     const nextBtn = document.getElementById("next");
     const content = document.getElementById("step-content");
@@ -343,105 +281,166 @@
   </section>
 
 
-  <div class="w-full bg-[#F5F3ED] flex justify-center">
-    <section class="text-black  w-full font-serif relative">
-      <div
-        class=" bg-[#F5F3ED]  py-[35px] md:py-[100px] px-[50px] xl:px-0">
+<div class="w-full bg-[#F5F3ED] flex justify-center">
+  <section class="text-black w-full font-serif relative">
+    <div class="bg-[#F5F3ED] py-[35px] md:py-[100px] px-[20px] sm:px-[50px] xl:px-0">
 
-        <!-- Heading -->
-        <h1
-          class="text-[32px] sm:text-[42px] md:text-[52px] font-normal md:mb-[23px] font-instrument-serif text-center">
-          <span class="text-[#737378]">Progress</span> Built with Purpose
-        </h1>
-        <!-- Divider -->
-        <div class="max-w-[1440px] mx-auto">
-          <div
-          class="hidden xl:block relative h-[1px] w-[973px] mx-auto justify-center items-center bg-[#121212]  ">
+      <!-- Heading -->
+      <h1
+        class="text-[32px] sm:text-[42px] md:text-[52px] font-normal md:mb-[23px] font-instrument-serif text-center">
+        <span class="text-[#737378]">Progress</span> Built with Purpose
+      </h1>
+
+      <!-- Slider Wrapper -->
+      <div class="overflow-hidden max-w-[1240px] mx-auto mt-[45px] md:mt-[75px]">
+        <!-- Track -->
+        <div id="sliderTrack"
+          class="flex transition-transform duration-500 ease-in-out"
+          style="transform: translateX(0%);">
+
+          <!-- Slide 1 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-[55px] flex-shrink-0 w-full">
+            <div class="relative xl:h-[269px] xl:w-[269px] bg-white border border-[#121212] p-6 pt-10 shadow-sm">
+              <div class="absolute top-[-26px] left-1/2 -translate-x-1/2 bg-[#F0EEE5] w-[105px] h-[50px] border border-[#121212] flex items-center justify-center">2025</div>
+              <div class="text-center">
+                <h3 class="text-[32px] font-instrument-serif">Product <br> Launching</h3>
+                <p class="text-[16px] text-[#555] font-instrument-sans mt-[12px]">It began with a simple frustration...</p>
+              </div>
+            </div>
+            <div class="relative xl:h-[269px] xl:w-[269px] bg-white border border-[#121212] p-6 pt-10 shadow-sm">
+              <div class="absolute top-[-26px] left-1/2 -translate-x-1/2 bg-[#F0EEE5] w-[105px] h-[50px] border border-[#121212] flex items-center justify-center">2025</div>
+              <div class="text-center">
+                <h3 class="text-[32px] font-instrument-serif">Financial <br> Community</h3>
+                <p class="text-[16px] text-[#555] font-instrument-sans mt-[12px]">It began with a simple frustration...</p>
+              </div>
+            </div>
+            <div class="relative xl:h-[269px] xl:w-[269px] bg-white border border-[#121212] p-6 pt-10 shadow-sm">
+              <div class="absolute top-[-26px] left-1/2 -translate-x-1/2 bg-[#F0EEE5] w-[105px] h-[50px] border border-[#121212] flex items-center justify-center">2025</div>
+              <div class="text-center">
+                <h3 class="text-[32px] font-instrument-serif">Build <br> Community</h3>
+                <p class="text-[16px] text-[#555] font-instrument-sans mt-[12px]">It began with a simple frustration...</p>
+              </div>
+            </div>
+            <div class="relative xl:h-[269px] xl:w-[269px] bg-white border border-[#121212] p-6 pt-10 shadow-sm">
+              <div class="absolute top-[-26px] left-1/2 -translate-x-1/2 bg-[#F0EEE5] w-[105px] h-[50px] border border-[#121212] flex items-center justify-center">2025</div>
+              <div class="text-center">
+                <h3 class="text-[32px] font-instrument-serif">Business <br> Agreement</h3>
+                <p class="text-[16px] text-[#555] font-instrument-sans mt-[12px]">It began with a simple frustration...</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-[55px] flex-shrink-0 w-full">
+            <div class="relative xl:h-[269px] xl:w-[269px] bg-white border border-[#121212] p-6 pt-10 shadow-sm">
+              <div class="absolute top-[-26px] left-1/2 -translate-x-1/2 bg-[#F0EEE5] w-[105px] h-[50px] border border-[#121212] flex items-center justify-center">2026</div>
+              <div class="text-center">
+                <h3 class="text-[32px] font-instrument-serif">Next <br> Feature</h3>
+                <p class="text-[16px] text-[#555] font-instrument-sans mt-[12px]">Another set of content...</p>
+              </div>
+            </div>
+            <div class="relative xl:h-[269px] xl:w-[269px] bg-white border border-[#121212] p-6 pt-10 shadow-sm">
+              <div class="absolute top-[-26px] left-1/2 -translate-x-1/2 bg-[#F0EEE5] w-[105px] h-[50px] border border-[#121212] flex items-center justify-center">2026</div>
+              <div class="text-center">
+                <h3 class="text-[32px] font-instrument-serif">Growth <br> Strategy</h3>
+                <p class="text-[16px] text-[#555] font-instrument-sans mt-[12px]">Another set of content...</p>
+              </div>
+            </div>
+            <div class="relative xl:h-[269px] xl:w-[269px] bg-white border border-[#121212] p-6 pt-10 shadow-sm">
+              <div class="absolute top-[-26px] left-1/2 -translate-x-1/2 bg-[#F0EEE5] w-[105px] h-[50px] border border-[#121212] flex items-center justify-center">2026</div>
+              <div class="text-center">
+                <h3 class="text-[32px] font-instrument-serif">Market <br> Expansion</h3>
+                <p class="text-[16px] text-[#555] font-instrument-sans mt-[12px]">Another set of content...</p>
+              </div>
+            </div>
+            <div class="relative xl:h-[269px] xl:w-[269px] bg-white border border-[#121212] p-6 pt-10 shadow-sm">
+              <div class="absolute top-[-26px] left-1/2 -translate-x-1/2 bg-[#F0EEE5] w-[105px] h-[50px] border border-[#121212] flex items-center justify-center">2026</div>
+              <div class="text-center">
+                <h3 class="text-[32px] font-instrument-serif">New <br> Partnership</h3>
+                <p class="text-[16px] text-[#555] font-instrument-sans mt-[12px]">Another set of content...</p>
+              </div>
+            </div>
+          </div>
+
         </div>
+      </div>
+<!-- Slider Wrapper -->
+
+<!-- Controls -->
+<div class="flex items-center justify-center gap-4 mt-6">
+  <button onclick="prevSlide()" class="px-4 py-2 border">⬅️</button>
+  <div class="relative w-[200px] h-[6px] bg-gray-300 rounded cursor-pointer" onclick="middleClick()">
+    <div id="progress" class="absolute left-0 top-0 h-full bg-black rounded transition-all duration-500"></div>
+  </div>
+  <button onclick="nextSlide()" class="px-4 py-2 border">➡️</button>
 </div>
 
+<script>
+  let currentSlide = 0;
+  const totalSlides = 2; // number of groups of 4 cards
+  const sliderTrack = document.getElementById("sliderTrack");
+  const progress = document.getElementById("progress");
 
-        <!-- Timeline Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-[55px] mt-[45px] md:mt-[75px] max-w-[1240px] mx-auto">
+  function updateSlider() {
+    // Slide
+    sliderTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
 
-          <!-- Box 1 -->
-          <div class="relative xl:h-[269px] xl:w-[269px] bg-[#F5F3ED] border border-[#121212] p-6 pt-10 shadow-sm">
+    // Progress
+    const percentage = (currentSlide / (totalSlides - 1)) * 100;
+    progress.style.width = percentage + "%";
+  }
 
-            <div class="absolute text2025 top-[-26px] ml-[106px] 
-            bg-[#F0EEE5] w-[105px] h-[50px] border border-[#121212] z-10  left-1/2 transform -translate-x-3/4
-            flex items-center justify-center">
-              2025
-            </div>
-            <img src="images/Line 2.svg" alt="Line"
-              class="absolute mt-[-117px] left-1/2 transform xl:block hidden  h-[51px] w-auto z-10" />
+  function prevSlide() {
+    if (currentSlide > 0) {
+      currentSlide--;
+      updateSlider();
+    }
+  }
 
-            <div class="text-center">
-              <h3 class="text-[32px] font-instrument-serif leading-[38px]">Product <br> Launching</h3>
-              <p class="text-[16px] text-[#555] leading-[1.5] font-instrument-sans mt-[12px]">
-                It began with a simple frustration: buying without truly knowing. Our founder, once an indecisive
-                shopper, grew tired of guesswork.
-              </p>
-            </div>
-          </div>
+  function nextSlide() {
+    if (currentSlide < totalSlides - 1) {
+      currentSlide++;
+      updateSlider();
+    }
+  }
 
-          <!-- Box 2 -->
-          <div class="relative xl:h-[269px] xl:w-[269px] bg-[#F5F3ED] border border-[#121212] p-6 pt-10 shadow-sm">
-            <div class="absolute text2025 top-[-26px] ml-[106px] 
-            bg-[#F0EEE5] w-[105px] h-[50px] border border-[#121212] z-10  left-1/2 transform -translate-x-3/4
-            flex items-center justify-center">
-              2025
-            </div>
-            <img src="images/Line 2.svg" alt="Line"
-              class="absolute mt-[-117px] left-1/2 transform xl:block hidden h-[51px] w-auto z-10" />
-            <div class="text-center">
-              <h3 class="text-[32px] font-instrument-serif leading-[38px]">Financial <br> Community</h3>
-              <p class="text-[16px] text-[#555] leading-[1.5] font-instrument-sans mt-[12px]">
-                It began with a simple frustration: buying without truly knowing. Our founder, once an indecisive
-                shopper, grew tired of guesswork.
-              </p>
-            </div>
-          </div>
+  function middleClick() {
+    nextSlide(); // click on bar → go next
+  }
 
-          <!-- Box 3 -->
-          <div class="relative xl:h-[269px] xl:w-[269px] bg-[#F5F3ED] border border-[#121212] p-6 pt-10 shadow-sm">
-            <div class="absolute text2025 top-[-26px] ml-[106px] 
-            bg-[#F0EEE5] w-[105px] h-[50px] border border-[#121212] z-10  left-1/2 transform -translate-x-3/4
-            flex items-center justify-center">
-              2025
-            </div>
-            <img src="images/Line 2.svg" alt="Line"
-              class="absolute mt-[-117px] left-1/2 transform xl:block hidden  h-[51px] w-auto z-10" />
-            <div class="text-center">
-              <h3 class="text-[32px] font-instrument-serif leading-[38px]">Build <br>Community</h3>
-              <p class="text-[16px] text-[#555] leading-[1.5] font-instrument-sans mt-[12px]">
-                It began with a simple frustration: buying without truly knowing. Our founder, once an indecisive
-                shopper, grew tired of guesswork.
-              </p>
-            </div>
-          </div>
+  updateSlider();
+</script>
 
-          <!-- Box 4 -->
-          <div class="relative xl:h-[269px] xl:w-[269px]  bg-[#F5F3ED] border border-[#121212] p-6 pt-10 shadow-sm">
-            <div class="absolute text2025 top-[-26px] ml-[106px] 
-            bg-[#F0EEE5] w-[105px] h-[50px] border border-[#121212] z-10  left-1/2 transform -translate-x-3/4
-            flex items-center justify-center">
-              2025
-            </div>
-            <img src="images/Line 2.svg" alt="Line"
-              class="absolute mt-[-117px] left-1/2 transform xl:block hidden  h-[51px] w-auto z-10" />
-            <div class="text-center">
-              <h3 class="text-[32px] font-instrument-serif leading-[38px]">Business <br> Agreement</h3>
-              <p class="text-[16px] text-[#555] leading-[1.5] font-instrument-sans mt-[12px]">
-                It began with a simple frustration: buying without truly knowing. Our founder, once an indecisive
-                shopper, grew tired of guesswork.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>  
-    </section>
-  </div>
-  
+
+<ul
+  class="flex flex-wrap justify-center text-[14px] gap-[11px] font-regular font-instrument-sans items-center mb-[32px]">
+
+  <li>
+    <a href="index.html" target="_blank" class="blogcatagory active-btn">View All</a>
+  </li>
+  <li>
+    <a href="index2.html" target="_blank" class="blogcatagory">Technology</a>
+  </li>
+  <li>
+    <a href="index3.html" target="_blank" class="blogcatagory">Design</a>
+  </li>
+  <li>
+    <a href="index4.html" target="_blank" class="blogcatagory">Marketing</a>
+  </li>
+</ul>
+
+<script>
+  const buttons = document.querySelectorAll(".blogcatagory");
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      // Remove active class from all buttons
+      buttons.forEach(b => b.classList.remove("active-btn"));
+      // Add active class to clicked button
+      btn.classList.add("active-btn");
+    });
+  });
+</script>
           <div class="relative w-full  h-[1px] bg-[#DBDBDB] mx-auto"></div>
 
           <footer class=" bg-[#F5F3ED] text-[#121212]   ">
