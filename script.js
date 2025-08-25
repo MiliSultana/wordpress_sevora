@@ -1,3 +1,6 @@
+
+
+
 //for the navbar..
   const menuToggle = document.getElementById("menu-toggle");
   const menu = document.getElementById("menu");
@@ -12,40 +15,6 @@
 
 
 //step progress bar
-
-let currentSlide = 0;
-  const totalSlides = 5; // number of groups of 4 cards
-  const sliderTrack = document.getElementById("sliderTrack");
-  const progress = document.getElementById("progress");
-
-  function updateSlider() {
-    // Slide
-    sliderTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
-
-    // Progress
-    const percentage = (currentSlide / (totalSlides - 1)) * 100;
-    progress.style.width = percentage + "%";
-  }
-
-  function prevSlide() {
-    if (currentSlide > 0) {
-      currentSlide--;
-      updateSlider();
-    }
-  }
-
-  function nextSlide() {
-    if (currentSlide < totalSlides - 1) {
-      currentSlide++;
-      updateSlider();
-    }
-  }
-
-  function middleClick() {
-    nextSlide(); // click on bar → go next
-  }
-
-  updateSlider();
 
 
 
@@ -253,3 +222,5 @@ if (window.innerWidth > 768) {
     scroller.style.overflow = "visible";
   }
 }
+
+//blog paging
