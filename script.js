@@ -112,11 +112,63 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// card for the peragraph
+
+// catagory selection for the blog page..
+  // Select all <a> links
+  const links = document.querySelectorAll(".blogcatagory");
+
+  links.forEach((link) => {
+    link.addEventListener("click", (e) => {
+     // e.preventDefault(); // prevent page reload (optional)
+
+      // remove active class from all links
+      links.forEach((l) => l.classList.remove("bg-black", "text-white"));
+
+      // add active class to clicked one
+      link.classList.add("bg-black", "text-white");
+    });
+  });
 
 
+// box slider for the about us page..
+  document.addEventListener("DOMContentLoaded", () => {
+  // -----------------
+  // SLIDER LOGIC
+  
+  let currentSlide = 0;
+  const totalSlides = 3; // number of slides
+  const sliderTrack = document.getElementById("sliderTrack");
+  const progress = document.getElementById("progress");
 
-gsap.registerPlugin(ScrollTrigger);
+  function updateSlider() {
+    if (!sliderTrack || !progress) return;
+    // Slide
+    sliderTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+    // Progress
+    const percentage = (currentSlide / (totalSlides - 1)) * 100;
+    progress.style.width = percentage + "%";
+  }
+
+  window.prevSlide = function () {
+    if (currentSlide > 0) {
+      currentSlide--;
+      updateSlider();
+    }
+  };
+
+  window.nextSlide = function () {
+    if (currentSlide < totalSlides - 1) {
+      currentSlide++;
+      updateSlider();
+    }
+  };
+
+  updateSlider();
+
+  // -----------------
+  // GSAP SCROLLTRIGGER LOGIC
+  // image and text scrooling for careers page ..
+  gsap.registerPlugin(ScrollTrigger);
 
 const scroller = document.querySelector(".scroller");
 
@@ -223,4 +275,13 @@ if (window.innerWidth > 768) {
   }
 }
 
-//blog paging
+
+
+});
+ 
+
+
+
+
+
+
