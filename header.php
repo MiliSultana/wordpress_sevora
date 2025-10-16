@@ -82,12 +82,17 @@
         </button>
 
         <!-- Back to Home Button (always visible) -->
+         <?php 
+$arrow_img = get_field('arrow_img'); 
+
+?>
+
         <div class="">
           <a href="<?php echo site_url(); ?>"
             class="inline-flex items-center font-instrument-sans font-medium text-center md:py-[13px] md:px-[26px] py-[3px] px-[3px]
             bg-[#242424] text-white border border-[#2E2E2E] hover:bg-[#555] text-[12px] md:text-[13px] transition gap-2">
-            <img src="<?php bloginfo('template_directory');?>/images/ArrowLeft.png" alt="Back Arrow" class="w-4 h-4" />
-            <span>BACK TO HOME</span>
+            <img src="<?php echo $arrow_img ['url']; ?>" alt="Back Arrow" class="w-4 h-4" />
+            <span><?php the_field('text'); ?></span>
           </a>
         </div>
       </div>

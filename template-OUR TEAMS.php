@@ -2,7 +2,7 @@
 //Template Name:OUR TEAMS
 ?>
 
-    <?php get_header(); ?>
+<?php get_header(); ?>
 <section class="container items-center justify-center mx-auto ">
         <div
             class="sm:px-[50px] md:px-[50px] lg:px-[50px] xl:px-[100px] 2xl:px-[148px] flex flex-wrap items-center justify-center pb-[20px] h-auto md:h-[40vh] px-[20px] md:py-0">

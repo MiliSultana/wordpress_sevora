@@ -1,12 +1,10 @@
 <?php 
 //Template Name: ABOUT US
-?><?php //echo get_template_directory_uri(); ?>
-
-
-
-<?php get_header(); 
-the_post();
 ?>
+
+
+
+<?php get_header(); ?>
 
   <div class="w-full bg-[#121212]">
     <div class=" flex justify-center items-center md:h-[60vh] lg:h-[70vh] xl:h-[90vh] 2xl:h-[90vh] w-full ">

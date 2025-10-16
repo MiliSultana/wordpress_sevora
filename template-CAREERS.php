@@ -2,6 +2,7 @@
 //Template Name:CAREERS
 ?>
 <?php get_header(); ?>
+
   <section class="w-full  bg-[#121212]">
     <div class="container bg-[#121212] mx-auto  pb-[85px] md:mt-0">
 
