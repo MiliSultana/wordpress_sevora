@@ -12,6 +12,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap"
     rel="stylesheet">
+
+
+    
 </head>
 
 
@@ -28,8 +31,10 @@
       <!-- Left: Logo -->
        <?php  $logoimg=get_header_image(); ?>
       <div>
+        <a href="<?php echo site_url(); ?>">
         <img src="<?php echo $logoimg; ?>" alt="SEVORA Logo" class="w-[130px] h-[30px] md:w-[215px] md:h-[48px]" />
-      </div>
+      </a>
+    </div>
 
       <!-- Middle: Navigation Links -->
       <ul id="menu"
