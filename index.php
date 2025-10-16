@@ -1,93 +1,10 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SEVORA</title>
-  <link href="./output.css" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap"
-    rel="stylesheet">
-</head>
+<?php //echo get_template_directory_uri(); ?>
 
 
 
-<body class="bg-[#121212] text-white ">
-
-  <!-- HEADER / NAVIGATION -->
-
-
-  <header class="sticky top-0 z-50 bg-[#121212] border-b border-[#242424]">
-    <nav
-      class=" container flex items-center justify-between mx-auto sm:px-[50px] md:px-[50px] lg:px-[50px] xl:px-[100px] 2xl:px-[148px] h-[50px] md:h-[100px] relative ">
-
-      <!-- Left: Logo -->
-      <div>
-        <img src="images/SEVORA Logo.png" alt="SEVORA Logo" class="w-[130px] h-[30px] md:w-[215px] md:h-[48px]" />
-      </div>
-
-      <!-- Middle: Navigation Links -->
-      <ul id="menu" class="hidden lg:flex flex-col lg:flex-row gap-6 text-[13px] 2xl:ml-[-280px] font-instrument-sans 
-  absolute lg:static top-[80px] right-20 w-[30%] sm:w-[20%] md:w-[15%] lg:w-auto 
-  bg-[#121212]/85 lg:bg-transparent leading-[40px] p-5 lg:p-0 z-40">
-
-        <li><a href="index.html" class="relative text-white font-medium group">ABOUT US
-            <span
-              class="absolute left-0 -bottom-1 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
-          </a>
-        </li>
-        <li><a href="index2.html" class="relative text-white font-medium group">OUR TEAMS
-            <span
-              class="absolute left-0 -bottom-1 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
-          </a>
-        </li>
-        <li><a href="index3.html" class="relative text-white font-medium group">CAREERS
-            <span
-              class="absolute left-0 -bottom-1 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
-          </a>
-        </li>
-        <li><a href="index4.html" class="relative text-white font-medium group">BLOG
-            <span
-              class="absolute left-0 -bottom-1 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
-          </a></li>
-        <li><a href="#" class="relative text-white font-medium group">NEWS
-            <span
-              class="absolute left-0 -bottom-1 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
-          </a></li>
-      </ul>
-
-
-      <!-- Right: Toggle + Back to Home -->
-      <div class="flex items-center gap-4">
-        <!-- Menu Toggle (only on mobile) -->
-        <button id="menu-toggle" class="block lg:hidden text-white focus:outline-none">
-          <!-- Hamburger Icon -->
-          <svg id="hamburger" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-          <!-- Close Icon -->
-          <svg id="close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-
-        <!-- Back to Home Button (always visible) -->
-        <div class="">
-          <a href="index.html"
-            class="inline-flex items-center font-instrument-sans font-medium text-center md:py-[13px] md:px-[26px] py-[3px] px-[3px]
-            bg-[#242424] text-white border border-[#2E2E2E] hover:bg-[#555] text-[12px] md:text-[13px] transition gap-2">
-            <img src="images/ArrowLeft.png" alt="Back Arrow" class="w-4 h-4" />
-            <span>BACK TO HOME</span>
-          </a>
-        </div>
-      </div>
-    </nav>
-  </header>
-
+<?php get_header(); 
+the_post();
+?>
 
   <div class="w-full bg-[#121212]">
     <div class=" flex justify-center items-center md:h-[60vh] lg:h-[70vh] xl:h-[90vh] 2xl:h-[90vh] w-full ">
@@ -100,7 +17,7 @@
 
 
           <div class="absolute hidden md:block  top-0 right-0 w-1/2 h-full ">
-            <img src="images/Vector.png" alt="Right side" class="w-full h-full object-cover" />
+            <img src="<?php bloginfo('template_directory');?>/images/Vector.png" alt="Right side" class="w-full h-full object-cover" />
           </div>
 
           <!-- Blur Glow Effect -->
@@ -147,7 +64,7 @@
               <!-- Video -->
               <div class="relative z-10 w-full max-w-[600px] max-h-[460px] px-4 md:px-0">
                 <video autoplay muted loop playsinline class="w-full h-auto object-contain">
-                  <source src="images/b9e7507766194a7d8035dc372c608159.mp4" type="video/mp4"
+                  <source src="<?php bloginfo('template_directory');?>/images/b9e7507766194a7d8035dc372c608159.mp4" type="video/mp4"
                     class="w-[600px] h-[460px]" />
                 </video>
               </div>
@@ -173,7 +90,7 @@
         <!-- Box 1 -->
         <div class="relative bg-[#F5F3ED] border border-gray-400 p-[20px]  shadow-sm overflow-hidden">
           <!-- Background image -->
-          <img src="images/SmallVector.png" alt=""
+          <img src="<?php bloginfo('template_directory');?>/images/SmallVector.png" alt=""
             class="absolute bottom-0 right-0 w-[120px] sm:w-[150px] md:w-[180px] lg:w-[200px] xl:w-[240px] 2xl:w-[340px] h-auto z-0" />
           <!-- Overlay -->
           <div class="absolute inset-0 bg-[#F5F3ED] opacity-5 z-0"></div>
@@ -201,7 +118,7 @@
 
         <!-- Box 2 -->
         <div class="relative bg-[#F5F3ED] border border-gray-400 p-[20px] shadow-sm overflow-hidden">
-          <img src="images/SmallVector.png" alt=""
+          <img src="<?php bloginfo('template_directory');?>/images/SmallVector.png" alt=""
             class="absolute bottom-0 right-0 w-[120px] sm:w-[150px] md:w-[180px] lg:w-[200px] xl:w-[240px] 2xl:w-[340px] h-auto z-0" />
           <div class="absolute inset-0 bg-[#F5F3ED] opacity-5 z-0"></div>
 
@@ -223,7 +140,7 @@
 
         <!-- Box 3 -->
         <div class="relative bg-[#F5F3ED] border border-gray-400 p-[14px] pb-[94px] shadow-sm overflow-hidden">
-          <img src="images/SmallVector.png" alt=""
+          <img src="<?php bloginfo('template_directory');?>/images/SmallVector.png" alt=""
             class="absolute bottom-0 right-0 w-[120px] sm:w-[150px] md:w-[180px] lg:w-[200px] xl:w-[240px] 2xl:w-[340px] h-auto z-0" />
           <div class="absolute inset-0 bg-[#F5F3ED] opacity-5 z-0"></div>
 
@@ -271,7 +188,7 @@
 
       <!-- Background Images Inside Container -->
       <div class="hidden md:block absolute top-0 right-0  ">
-        <img src="images/RightVector.png" alt="Right side" class="w-[350px] h-[350px] " />
+        <img src="<?php bloginfo('template_directory');?>/images/RightVector.png" alt="Right side" class="w-[350px] h-[350px] " />
       </div>
 
       <div
@@ -279,7 +196,7 @@
       </div>
 
       <div class="hidden md:block absolute left-0 bottom-0 ">
-        <img src="images/LeftVector.png" alt="left side" class="w-[350px] h-[350px] " />
+        <img src="<?php bloginfo('template_directory');?>/images/LeftVector.png" alt="left side" class="w-[350px] h-[350px] " />
       </div>
       <div
         class=" absolute   top-[230px] left-[-320px]   w-[600px] h-[600px] bg-[#666666] opacity-[30%] rounded-full blur-[200px] z-10">
@@ -305,7 +222,7 @@
 
           <div class="flex flex-col sm:flex-row items-center justify-center gap-[8px]  mt-[32px]">
             <div class="w-[44px] h-[44px] overflow-hidden ">
-              <img src="images/Frame 2693.png" alt="CEO Image" class="object-cover w-full h-full" />
+              <img src="<?php bloginfo('template_directory');?>/images/Frame 2693.png" alt="CEO Image" class="object-cover w-full h-full" />
             </div>
             <div class="text-center sm:text-left font-instrument-sans font-medium sm:mt-0 ">
               <h3 class=" text-[18px] font-semibold text-white">Mashum Mollah</h3>
@@ -350,7 +267,7 @@
             flex items-center justify-center">
                   2025
                 </div>
-                <img src="images/Line 2.svg" alt="Line"
+                <img src="<?php bloginfo('template_directory');?>/images/Line 2.svg" alt="Line"
                   class="absolute mt-[-117px] left-[130px] transform xl:block hidden  h-[51px] w-auto z-10" />
 
                 <div class="text-center">
@@ -369,7 +286,7 @@
             flex items-center justify-center">
                   2025
                 </div>
-                <img src="images/Line 2.svg" alt="Line"
+                <img src="<?php bloginfo('template_directory');?>/images/Line 2.svg" alt="Line"
                   class="absolute mt-[-117px] left-[129px] transform xl:block hidden h-[51px] w-auto z-10" />
                 <div class="text-center">
                   <h3 class="text-[32px] font-instrument-serif leading-[38px]">Financial <br> Community</h3>
@@ -387,7 +304,7 @@
             flex items-center justify-center">
                   2025
                 </div>
-                <img src="images/Line 2.svg" alt="Line"
+                <img src="<?php bloginfo('template_directory');?>/images/Line 2.svg" alt="Line"
                   class="absolute mt-[-117px] left-[129px] transform xl:block hidden  h-[51px] w-auto z-10" />
                 <div class="text-center">
                   <h3 class="text-[32px] font-instrument-serif leading-[38px]">Build <br>Community</h3>
@@ -405,7 +322,7 @@
             flex items-center justify-center">
                   2025
                 </div>
-                <img src="images/Line 2.svg" alt="Line"
+                <img src="<?php bloginfo('template_directory');?>/images/Line 2.svg" alt="Line"
                   class="absolute mt-[-117px] left-[130px] transform xl:block hidden  h-[51px] w-auto z-10" />
                 <div class="text-center">
                   <h3 class="text-[32px] font-instrument-serif leading-[38px]">Business <br> Agreement</h3>
@@ -428,7 +345,7 @@
             flex items-center justify-center">
                   2025
                 </div>
-                <img src="images/Line 2.svg" alt="Line"
+                <img src="<?php bloginfo('template_directory');?>/images/Line 2.svg" alt="Line"
                   class="absolute mt-[-117px] left-[130px] transform xl:block hidden  h-[51px] w-auto z-10" />
 
                 <div class="text-center">
@@ -447,7 +364,7 @@
             flex items-center justify-center">
                   2025
                 </div>
-                <img src="images/Line 2.svg" alt="Line"
+                <img src="<?php bloginfo('template_directory');?>/images/Line 2.svg" alt="Line"
                   class="absolute mt-[-117px] left-[129px] transform xl:block hidden h-[51px] w-auto z-10" />
                 <div class="text-center">
                   <h3 class="text-[32px] font-instrument-serif leading-[38px]">Financial <br> Community</h3>
@@ -465,7 +382,7 @@
             flex items-center justify-center">
                   2025
                 </div>
-                <img src="images/Line 2.svg" alt="Line"
+                <img src="<?php bloginfo('template_directory');?>/images/Line 2.svg" alt="Line"
                   class="absolute mt-[-117px] left-[129px] transform xl:block hidden  h-[51px] w-auto z-10" />
                 <div class="text-center">
                   <h3 class="text-[32px] font-instrument-serif leading-[38px]">Build <br>Community</h3>
@@ -483,7 +400,7 @@
             flex items-center justify-center">
                   2025
                 </div>
-                <img src="images/Line 2.svg" alt="Line"
+                <img src="<?php bloginfo('template_directory');?>/images/Line 2.svg" alt="Line"
                   class="absolute mt-[-117px] left-[130px] transform xl:block hidden  h-[51px] w-auto z-10" />
                 <div class="text-center">
                   <h3 class="text-[32px] font-instrument-serif leading-[38px]">Business <br> Agreement</h3>
@@ -506,7 +423,7 @@
             flex items-center justify-center">
                   2025
                 </div>
-                <img src="images/Line 2.svg" alt="Line"
+                <img src="<?php bloginfo('template_directory');?>/images/Line 2.svg" alt="Line"
                   class="absolute mt-[-117px] left-[130px] transform xl:block hidden  h-[51px] w-auto z-10" />
 
                 <div class="text-center">
@@ -525,7 +442,7 @@
             flex items-center justify-center">
                   2025
                 </div>
-                <img src="images/Line 2.svg" alt="Line"
+                <img src="<?php bloginfo('template_directory');?>/images/Line 2.svg" alt="Line"
                   class="absolute mt-[-117px] left-[129px] transform xl:block hidden h-[51px] w-auto z-10" />
                 <div class="text-center">
                   <h3 class="text-[32px] font-instrument-serif leading-[38px]">Financial <br> Community</h3>
@@ -543,7 +460,7 @@
             flex items-center justify-center">
                   2025
                 </div>
-                <img src="images/Line 2.svg" alt="Line"
+                <img src="<?php bloginfo('template_directory');?>/images/Line 2.svg" alt="Line"
                   class="absolute mt-[-117px] left-[129px] transform xl:block hidden  h-[51px] w-auto z-10" />
                 <div class="text-center">
                   <h3 class="text-[32px] font-instrument-serif leading-[38px]">Build <br>Community</h3>
@@ -561,7 +478,7 @@
             flex items-center justify-center">
                   2025
                 </div>
-                <img src="images/Line 2.svg" alt="Line"
+                <img src="<?php bloginfo('template_directory');?>/images/Line 2.svg" alt="Line"
                   class="absolute mt-[-117px] left-[130px] transform xl:block hidden  h-[51px] w-auto z-10" />
                 <div class="text-center">
                   <h3 class="text-[32px] font-instrument-serif leading-[38px]">Business <br> Agreement</h3>
@@ -585,7 +502,7 @@
           <div class="flex items-center gap-[12px]  ">
             <!-- Left Arrow Button -->
             <button class="  " onclick="prevSlide()">
-              <img src="images/LeftArrow.png" alt="Left Arrow" class="w-[18px] h-[14px]">
+              <img src="<?php bloginfo('template_directory');?>/images/LeftArrow.png" alt="Left Arrow" class="w-[18px] h-[14px]">
             </button>
 
             <!-- Horizontal Progress Bar -->
@@ -597,7 +514,7 @@
 
             <!-- Right Arrow Button -->
             <button class="" onclick="nextSlide()">
-              <img src="images/RightArrow.png" alt="Right Arrow" class="w-[18px] h-[14px]">
+              <img src="<?php bloginfo('template_directory');?>/images/RightArrow.png" alt="Right Arrow" class="w-[18px] h-[14px]">
             </button>
           </div>
 
@@ -611,79 +528,4 @@
 
   </script>
 
-  <footer class="bg-[#F5F3ED] border-t border-[#DBDBDB]">
-    <div
-      class="container mx-auto bg-[#F5F3ED] text-[#121212] relative  text-left px-[20px] sm:px-[50px] md:px-[50px] lg:px-[50px] xl:px-[100px]  2xl:px-[148px] py-[35px] md:py-[100px] overflow-hidden">
-      <div class=" flex flex-wrap 2xl:gap-[106px] lg:gap-[82px]">
-
-        <!-- Logo & Description -->
-        <div class="max-w-[300px]  mb-10">
-          <img src="images/Frame 3.png" alt="SEVORA Logo" class="w-[250px] h-[56px] mb-5" />
-          <p class="text-[16px] font-instrument-sans leading-[1.6] mb-5">
-            Maecenas dignissim justo eget nulla rutrum molestie. Dui, vel Maecenas lobortis sem dui, vel rutrum
-            risus tincidunt ullamcorper.
-          </p>
-          <div class="flex">
-            <img src="images/googleplay.png" alt="Google Play" class="w-[120px] mr-2" />
-            <img src="images/applestore.png" alt="App Store" class="w-[120px]" />
-          </div>
-        </div>
-
-        <!-- Footer Links -->
-        <div class="flex flex-wrap gap-9  xl:gap-[84px] 2xl:gap-[129px]">
-          <!-- Seller -->
-          <div>
-            <h4 class="text-[16px] font-instrument-sans font-[500] mb-2">For Seller</h4>
-            <ul class="text-[14px] font-instrument-sans space-y-2">
-              <li class="cursor-pointer">Partner With Us</li>
-              <li class="cursor-pointer">Website For You</li>
-            </ul>
-          </div>
-
-          <!-- Delivery -->
-          <div>
-            <h4 class="text-[16px] font-instrument-sans font-[500] mb-2">For Delivery</h4>
-            <ul class="text-[14px] font-instrument-sans space-y-2">
-              <li class="cursor-pointer">Partner With Us</li>
-              <li class="cursor-pointer">App For You</li>
-            </ul>
-          </div>
-
-          <!-- Quick Links -->
-          <div>
-            <h4 class="text-[16px] font-instrument-sans font-[500] mb-2">Quick Links</h4>
-            <ul class="text-[14px] font-instrument-sans space-y-2">
-              <li class="cursor-pointer">Privacy Policy</li>
-              <li class="cursor-pointer">Terms & Condition</li>
-              <li class="cursor-pointer">Cookie Policy</li>
-              <li class="cursor-pointer">Help & Support</li>
-            </ul>
-          </div>
-
-          <!-- Social Media -->
-          <div>
-            <h4 class="text-[16px] font-instrument-sans font-[500] mb-2">Social Media</h4>
-            <ul class="text-[14px] font-instrument-sans  space-y-2">
-              <li class="cursor-pointer">Facebook</li>
-              <li class="cursor-pointer">Instagram</li>
-              <li class="cursor-pointer">LinkedIn</li>
-              <li class="cursor-pointer">Twitter</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Footer Bottom -->
-      <div class="w-full bg-[#F5F3ED] mx-auto">
-        <div
-          class="pt-10 bg-[#F5F3ED] py-10 text-center text-xs text-[#121212] text-[12px] font-instrument-sans tracking-[2px]">
-          © 2025 SEVORA. ALL RIGHTS RESERVED.
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="script.js"></script>
-
-</body>
-
-</html>
+  <?php get_footer(); ?>
