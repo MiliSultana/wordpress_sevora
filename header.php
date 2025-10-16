@@ -26,8 +26,9 @@
       class=" container flex items-center justify-between mx-auto sm:px-[50px] md:px-[50px] lg:px-[50px] xl:px-[100px] 2xl:px-[148px] h-[50px] md:h-[100px] relative ">
 
       <!-- Left: Logo -->
+       <?php  $logoimg=get_header_image(); ?>
       <div>
-        <img src="<?php bloginfo('template_directory');?>/images/SEVORA Logo.png" alt="SEVORA Logo" class="w-[130px] h-[30px] md:w-[215px] md:h-[48px]" />
+        <img src="<?php echo $logoimg; ?>" alt="SEVORA Logo" class="w-[130px] h-[30px] md:w-[215px] md:h-[48px]" />
       </div>
 
       <!-- Middle: Navigation Links -->
